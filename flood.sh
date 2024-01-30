@@ -32,4 +32,7 @@ then
 elif [ f -eq 2 ];
 then
     discoveryflood
+elif [f -eq 3];
+then
+    denialofservice
 fi 
