@@ -2,5 +2,5 @@
 
 read ip
 ifconfig eth0 $ip
-ifconfig
+ifconfig |grep $ip
 
