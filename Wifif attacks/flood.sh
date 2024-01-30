@@ -28,6 +28,7 @@ denialofservice(){
         echo  " Enter file name you want "
         read wr
         airodump-ng $de --bssid $bs --channel $ch --write $wr
+    fi
 }
 echo "Select an attack"
 echo "1. Mac Flooding"
