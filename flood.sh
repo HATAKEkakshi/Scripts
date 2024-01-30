@@ -26,13 +26,13 @@ echo "1. Mac Flooding"
 echo  "2. Discovery Flooding"
 echo  "3. Denial of service attack "
 read f
-if [ f -eq 1 ];
+if [ $f -eq 1 ];
 then
     macflood
-elif [ f -eq 2 ];
+elif [ $f -eq 2 ];
 then
     discoveryflood
-elif [f -eq 3];
+elif [ $f -eq 3];
 then
     denialofservice
 fi 
