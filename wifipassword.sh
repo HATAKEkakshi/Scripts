@@ -10,4 +10,10 @@ aircrak(){
 
 echo "Welcome to password cracker"
 echo "Press 1 to continue"
-aircrak
+read n
+if [ $n -eq 1 ];
+then
+    aircrak
+else
+    "wrong Input"
+fi
