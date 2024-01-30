@@ -1,6 +1,6 @@
 #!/bin/bash
 update(){
-    apt update $$ apt upgrade
+    apt update && apt upgrade
 }
 echo "Do you want to upgrade"
 read n

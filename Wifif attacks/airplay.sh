@@ -6,5 +6,5 @@ air(){
     read tr
     echo  "Enter wifi chipset name"
     read wi
-    airplay-ng --deauth 100 -a $ma -c $tr $wi
+    aireplay-ng --deauth 100 -a $ma -c $tr $wi
 }
