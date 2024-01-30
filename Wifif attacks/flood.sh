@@ -19,7 +19,7 @@ denialofservice(){
     if [ $choice -eq 1 ];
     then
         airodump-ng $de
-    elif [ $choie -eq 2 ];
+    elif [ $choice -eq 2 ];
     then
         echo " Enter bssid of Target "
         read bs
