@@ -35,6 +35,6 @@ echo $d
 echo $e 
 echo $f 
 mac=$a:$b:$c:$d:$e:$f
-ifconfig eth0 down
-ifconfig eth0 hw ether $mac
+ifconfig wlo1 down
+ifconfig wlo1 hw ether $mac
 ifconfig up
