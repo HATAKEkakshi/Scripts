@@ -14,11 +14,11 @@ read st
 
 if [ $st -eq 1 ];
 then
-    nmap -A $ip -p $port |grep open
+    nmap -A $ip -p- |grep open
 elif [ $st -eq 2 ];
 then
-    nmap -sS -O -sV $ip -p $port |grep open
+    nmap -sS -O -sV $ip -p- |grep open
 elif [ $st -eq 3 ];
 then
-    nmap -sT -O -sV $ip -p $port |grep open
+    nmap -sT -O -sV -p- $ip  |grep open
 fi
