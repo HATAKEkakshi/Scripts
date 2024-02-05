@@ -14,10 +14,10 @@ then
     nmap $ip
 elif [ $scan -eq 2 ];
 then
-    nmap -sC 
+    nmap -sC $ip
 elif [ $scan -eq 3 ];
 then
-    nmap -sV
+    nmap -sV $ip
 elif [$scan -eq 4 ];
 then
     nmap -p- -sC -sV $ip 
@@ -29,5 +29,5 @@ then
     echo "Attack from following scripts"
     echo "Please enter script name "
     read script
-    nmap -p- -sC -sV -script=$script
+    nmap -p- -sC -sV --script $script $ip
 fi 
