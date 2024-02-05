@@ -20,7 +20,7 @@ then
     nmap -sV $ip
 elif [ $scan -eq 4 ];
 then
-    nmap -p- -sC -sV $ip 
+    nmap -p- -sC -sV -Pn $ip 
 elif [ $scan -eq 5 ];
 then
     echo "Enter keyword for which script you want to search"
@@ -29,5 +29,5 @@ then
     echo "Attack from following scripts"
     echo "Please enter script name "
     read script
-    nmap -p- -sC -sV --script $script $ip
+    nmap -p- -sC -Pn -sV --script $script $ip
 fi 
