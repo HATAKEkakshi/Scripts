@@ -6,7 +6,7 @@ echo "Enter service you want to run"
 echo "1.Basic port scan"
 echo "2.Service Scan"
 echo "3.Version scan"
-echo "4.scripts scan"
+echo "4.Scripts scan"
 read scan
 if [ $scan -eq 1 ];
 then
