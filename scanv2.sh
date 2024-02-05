@@ -28,4 +28,6 @@ then
     ls -al /usr/bin/local/nmap/scripts/ |grep $keyword
     echo "Attack from following scripts"
     echo "Please enter script name "
+    read script
+    nmap -p- -sC -sV -script=$script
 fi 
