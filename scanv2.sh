@@ -21,4 +21,11 @@ then
 elif [$scan -eq 4 ];
 then
     nmap -p- -sC -sV $ip 
-fi
+elif [$scan -eq 5];
+then
+    echo "Enter keyword for which script you want to search"
+    read keyword
+    ls -al /usr/bin/local/nmap/scripts/ |grep $keyword
+    echo "Attack from following scripts"
+    echo "Please enter script name "
+fi 
