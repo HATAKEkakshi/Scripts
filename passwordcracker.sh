@@ -25,7 +25,9 @@ echo "Enter hash file location in txt format"
 read hashdestination
 echo "Enter wordlist location"
 read wordlist
+echo "Enter file name you want output to be saved"
+read output
 if [ $choice -eq 1 ];
 then
-    hashcat -a 0 -m $hashtype $hashdestination $wordlist
+    hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
 fi
