@@ -7,6 +7,7 @@ echo "1.Basic port scan"
 echo "2.Service Scan"
 echo "3.Version scan"
 echo "4.Scripts scan"
+echo "5.Nmap script scanner"
 read scan
 if [ $scan -eq 1 ];
 then
