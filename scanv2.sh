@@ -18,10 +18,10 @@ then
 elif [ $scan -eq 3 ];
 then
     nmap -sV $ip
-elif [$scan -eq 4 ];
+elif [ $scan -eq 4 ];
 then
     nmap -p- -sC -sV $ip 
-elif [$scan -eq 5;
+elif [ $scan -eq 5 ];
 then
     echo "Enter keyword for which script you want to search"
     read keyword
