@@ -6,8 +6,10 @@ echo "3.File password/hashes"
 read type
 if [ $type -eq 1 ];
 then
+    echo "under construnction"
 elif [ $type -eq 2 ];
 then
+    echo "Under construnction"
 elif [ $type -eq 3 ];
 then
     echo "Do you have hash of the file "
@@ -16,8 +18,8 @@ then
     read hc
     if [ $hc -eq 1 ];
     then
-        echo "<--------------------Below are mentioned hashes type---------------------->"
-        echo "900 | MD4
+        echo "<--------------------Below are Mentioned Hashes type---------------------->"
+        echo "        900 | MD4
         0 | MD5
         100 | SHA1
         1300 | SHA2-224
@@ -60,6 +62,14 @@ then
             read max
             hashcat -a 3 -m $hashtype --increment --increent-min $min --increment-max $max $hashdestination $wordlist $char 
         fi 
+    elif [ $hc -eq 2 ];
+    then
+        echo "Enter the location of rar file if want to crack file password"
+        read rar
+        echo "Hash of your file "
+        echo "<------------------------------------------------->"
+        rar2john $rar
+        echo "<-------------------------------------------------->"
     fi
 fi
 
