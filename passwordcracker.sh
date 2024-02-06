@@ -13,7 +13,7 @@ then
     aircrak(){
         echo "Enter name of handshake file"
         read handshake
-        echo "Enrer destination of handshake file"
+        echo "Enrer destination of password file"
         read passwordfile
         aircrack-ng $handshake -w $passwordfile
     }
