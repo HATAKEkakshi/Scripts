@@ -9,7 +9,7 @@ passwordfile(){
     then
         passwordfile=/home/hatakekakashi/Scripts/master.txt/
     else
-        
+        echo "here you go"
     fi
 
     echo "enter keyword to search in files"
