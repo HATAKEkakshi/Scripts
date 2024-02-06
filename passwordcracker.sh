@@ -30,4 +30,18 @@ read output
 if [ $choice -eq 1 ];
 then
     hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
+elif [$choice -eq 2 ];
+then  
+    echo "Enter location second wordlist"
+    read wordlist2
+    hashcat -a 0 -m $hashtype $hashdestination $wordlist $wordlist2
+elif [$choice -eq 3 ];
+then
+    echo "Enter charcter set "
+    read char
+    echo "Enter min increment number for password"
+    read min
+    echo "Enter max increment number for password"
+    read max
+    hashcat -a 3 -m $hashtype --increment --increent-min $min --increment-max $max $hashdestination $wordlist $char 
 fi
