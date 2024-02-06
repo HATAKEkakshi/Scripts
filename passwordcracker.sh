@@ -1,6 +1,9 @@
 #!/bin/bash
 passwordfile(){
     echo "Select from following password list"
+    echo "enter keyword to search in files"
+    read search
+    grep $search
 }
 echo "Select format of password you want to crack"
 echo "1.Protocol type"
