@@ -1,4 +1,7 @@
 #!/bin/bash
+passwordfile(){
+    echo "Select from following password list"
+}
 echo "Select format of password you want to crack"
 echo "1.Protocol type"
 echo "2.Wifi password"
@@ -7,6 +10,7 @@ read type
 if [ $type -eq 1 ];
 then
     echo "under construnction"
+    passwordfile
 elif [ $type -eq 2 ];
 then
     
