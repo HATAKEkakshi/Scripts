@@ -9,7 +9,24 @@ then
     echo "under construnction"
 elif [ $type -eq 2 ];
 then
-    echo "Under construnction"
+    
+    aircrak(){
+        echo "Enter name of handshake file"
+        read handshake
+        echo "Enrer destination of handshake file"
+        read passwordfile
+        aircrack-ng $handshake -w $passwordfile
+    }
+
+    echo "Welcome to password cracker"
+    echo "Press 1 to continue"
+    read n
+    if [ $n -eq 1 ];
+    then
+        aircrak
+    else
+        "wrong Input"
+    fi
 elif [ $type -eq 3 ];
 then
     echo "Do you have hash of the file "
