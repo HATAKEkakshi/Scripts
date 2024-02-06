@@ -28,7 +28,7 @@ echo "2.No"
 read choice
 if [ $choice -eq 1 ];
 then
-
+    loopcopy
 else
     echo "Enter location of file you to copy from"
     read location
