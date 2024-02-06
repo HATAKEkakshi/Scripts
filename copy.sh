@@ -57,7 +57,6 @@ diffmaster(){
         loopcopy
     fi 
 }
-
 echo "Select Do you have multiple files"
 echo "Do you have multiple files"
 echo "1.Yes"
