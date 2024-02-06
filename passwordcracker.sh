@@ -7,6 +7,8 @@ passwordfile(){
     read opt
     if [ $opt -eq 1 ];
     then
+        passwordfile=/home/hatakekakashi/Scripts/master.txt/
+    else
         
     fi
 
