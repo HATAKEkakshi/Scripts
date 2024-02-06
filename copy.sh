@@ -19,7 +19,7 @@ loopcopy(){
             cp $destination/$filename $master
         done  
 
-
+    fi 
 }
 echo "Select Do you have multiple files"
 echo "Do you have multiple files"
