@@ -2,6 +2,14 @@
 passwordfile(){
     echo "Select from following password list"
     echo "Want to search from master list"
+    echo "1.yes"
+    echo "2.No"
+    read opt
+    if [ $opt -eq 1 ];
+    then
+        
+    fi
+
     echo "enter keyword to search in files"
     read search
     grep $search
