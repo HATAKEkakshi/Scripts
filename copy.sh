@@ -32,7 +32,9 @@ loopcopy(){
             echo "Enter destination copied folder"
             read copi
             cp $des $copi 
+        done 
     fi 
+}
 diffmaster(){
     echo "Do you have multiple copy folder means you want copy content from multiple file to multiple other file not a single file"
     echo "1.If you have Multiple diff coping file"
@@ -49,11 +51,13 @@ diffmaster(){
             echo "Enter the location or name of multiple masters "
             read master
             cp $l $master
-    elif [ $g -eq 1 ];
+        done 
+    elif [ $g -eq 2 ];
+    then 
         loopcopy
     fi 
 }
-}
+
 echo "Select Do you have multiple files"
 echo "Do you have multiple files"
 echo "1.Yes"
@@ -68,4 +72,4 @@ else
     echo "Enter location of file you want to copy it"
     read data
     cp $location $data
-f
+fi 
