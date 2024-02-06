@@ -29,6 +29,10 @@ echo "Enter file name you want output to be saved"
 read output
 if [ $choice -eq 1 ];
 then
+    echo ""
+fi
+if [ $choice -eq 1 ];
+then
     hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
 elif [$choice -eq 2 ];
 then  
