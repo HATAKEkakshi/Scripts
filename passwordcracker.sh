@@ -1,6 +1,7 @@
 #!/bin/bash
 passwordfile(){
     echo "Select from following password list"
+    echo "Want to search from master list"
     echo "enter keyword to search in files"
     read search
     grep $search
