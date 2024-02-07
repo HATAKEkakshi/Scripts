@@ -1,8 +1,63 @@
 #!/bin/bash 
+deldirect(){
+    echo "Ensure you are in root "
+    echo "Enter name or destination of directory you want to remove"
+    read k
+    rm -r $k
+}
+directory(){
+    echo "Selet from the following "
+    echo "1.Single Directory"
+    echo "2.Multiple Directory"
+    read option
+    if [ $option -eq 1 ];
+    then
+        deldirect
+    elif [ $option -eq 2 ];
+    then
+    echo "Enter how many directory you want to delete(count)"
+    read coun
+    for ((i=1;i<=coun;i++))
+    do
+        deldirect
+    done
+
+}
+delete(){
+    echo "Enter the destination of the file or name"
+    read del
+    rm $del
+    
+}
+file(){
+    echo "select from the following"
+    echo "1.single file"
+    echo "2.Multiple files"
+    read otp
+    if [ $otp -eq 1 ];
+    then
+        delete
+    elif [ $otp -eq 2 ];
+    then
+        echo "Enter how many file you want to remove"
+        read n
+        for ((i=1;i<=n;i++))
+        do
+           delete 
+        done
+    fi
+}
 remove(){
     echo "Select from following "
     echo "1.file"
     echo "2.Directory"
+    read type
+    if [ $type -eq 1 ];
+    then
+        file
+    else
+        Directory
+    fi
 }
 move(){
     echo "Select from the following function"
