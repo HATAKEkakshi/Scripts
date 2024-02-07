@@ -1,4 +1,7 @@
 #!/bin/bash
+remove(){
+    echo "Enter "
+}
 move(){
     echo "Select from the following function"
     echo "Multiple files to move"
