@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/bash 
 remove(){
-    echo "Enter "
+    echo "Select from following "
+    echo "1.file"
+    echo "2.Directory"
 }
 move(){
     echo "Select from the following function"
