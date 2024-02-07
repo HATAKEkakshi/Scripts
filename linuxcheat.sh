@@ -30,6 +30,7 @@ echo "1.Copy"
 echo "2.Delete"
 echo "3.create"
 echo "4.move"
+echo "5.make exceutable file give hime permission"
 echo "<-------------------------------------------------------------->"
 read choice
 if [ $choice -eq 1 ];
