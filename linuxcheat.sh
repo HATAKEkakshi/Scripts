@@ -107,4 +107,19 @@ then
 elif [ $choice -eq 4 ];
 then
     ./move.sh
+elif [ $choice -eq 5 ];
+then
+    echo "Selct from the following"
+    echo "1.Single file"
+    echo "Multiple file or directory"
+    read files
+    if [ $files -eq 1 ];
+    then
+        echo "Ener file name or destination"
+        read l
+        chmod +x $l
+    elif [ $files -eq 2 ];
+    then
+        chmod +x *
+    fi 
 fi
