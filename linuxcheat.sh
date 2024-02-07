@@ -15,13 +15,13 @@ directory(){
         deldirect
     elif [ $option -eq 2 ];
     then
-    echo "Enter how many directory you want to delete(count)"
-    read coun
-    for ((i=1;i<=coun;i++))
-    do
-        deldirect
-    done
-
+        echo "Enter how many directory you want to delete(count)"
+        read coun
+        for ((i=1;i<=coun;i++))
+        do
+            deldirect
+        done
+    fi
 }
 delete(){
     echo "Enter the destination of the file or name"
@@ -98,7 +98,7 @@ then
     ./copy.sh
 elif [ $choice -eq 2 ];
 then
-    ./remove.sh
+    remove
 elif [ $choice -eq 3 ];
 then
     echo "Enter folder name you want to create"
