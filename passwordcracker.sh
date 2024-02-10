@@ -61,11 +61,12 @@ passwordfile(){
             fi
         elif [ $cracked -eq 4 ];
         then
-            echo "Choose from the following "
+            echo "<--------------------------------------Choose from the following--------------------------------> "
             echo "1.Sucuri-Top-Wordpress-Passwords.txt"
             echo "2.multiplesources-passwords-fabian-fingerle.de.txt"
             echo "3.python-heralding-sep2019.txt"
             echo "4.wordpress-attacks-july2014.txt"
+            echo "<------------------------------------------------------------------------------------------------->"
             read qw
             if [ $qw -eq 1 ];
             then
@@ -144,9 +145,9 @@ then
         echo "Enter file name you want output to be saved"
         read output
         echo "Select from the following Attack TYPE"
-        echo "single wordlist"
-        echo "Double wordlist"
-        echo "charset and increment"
+        echo "1.Single wordlist"
+        echo "2.Double wordlist"
+        echo "3.charset and increment"
         read select
         if [ $select -eq 1 ];
         then
