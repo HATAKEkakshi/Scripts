@@ -92,10 +92,11 @@ passwordfile(){
         wordlist=$open
     fi
 }
-echo "Select format of password you want to crack"
+echo "<------------------------------------------------Select format of Password you want to crack------------------------------------------------->"
 echo "1.Protocol type"
 echo "2.Wifi password"
 echo "3.File password/hashes"
+echo "<---------------------------------------------------------------------------------------------------------------------------------------------->"
 read type
 if [ $type -eq 1 ];
 then
