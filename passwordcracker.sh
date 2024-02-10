@@ -60,7 +60,18 @@ passwordfile(){
         elif [ $cracked -eq 4 ];
         then
             echo "Choose from the following "
-            
+            echo "1.Sucuri-Top-Wordpress-Passwords.txt"
+            echo "2.multiplesources-passwords-fabian-fingerle.de.txt"
+            echo "3.python-heralding-sep2019.txt"
+            echo "4.wordpress-attacks-july2014.txt"
+            read qw
+            if [ $qw -eq 1 ];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/Sucuri-Top-Wordpress-Passwords.txt/
+            elif [ $qw -eq 2 ];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt/
+            fi
         fi
     else
         echo "Enter the destination of the file of wordlist"
