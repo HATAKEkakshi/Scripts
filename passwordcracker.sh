@@ -159,8 +159,8 @@ then
             hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
         elif [  $select -eq 2 ];
         then  
-            echo "Select file for second wordlist"
             passwordfile
+            echo "Enter from second wordlist"
             wordlist2
             hashcat -a 0 -m $hashtype $hashdestination $wordlist $wordlist_2
         elif [ $select -eq 3 ];
