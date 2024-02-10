@@ -7,6 +7,7 @@ passwordfile(){
     read opt
     if [ $opt -eq 1 ];
     then
+        echo "<----------------------------SELECT FROM THE FOLLOWING OPTION---------------------------------->"
         echo "1.Leaked Databases"
         echo "2.BiblePass"
         echo "3.Malaware"
@@ -16,6 +17,7 @@ passwordfile(){
         echo "7.Software"
         echo "8.Cracked Hashes"
         echo "9.Others password list"
+        echo "<----------------------------------------------------------------------------------------------->"
         read cracked
         if [ $cracked -eq 1 ];
         then
