@@ -1,4 +1,8 @@
 #!/bin/bash
+wordlist2(){
+    passwordfile
+    wordlist=wordlist_2
+}
 passwordfile(){
     echo "Select from following password list"
     echo "Select you want to select from Seclist or no"
@@ -155,11 +159,11 @@ then
             hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
         elif [  $select -eq 2 ];
         then  
-            echo "Enter location second wordlist"
-            read wordlist2
+            echo "Select file for second wordlist"
             passwordfile
-            hashcat -a 0 -m $hashtype $hashdestination $wordlist $wordlist2
-        elif [$select -eq 3 ];
+            wordlist2
+            hashcat -a 0 -m $hashtype $hashdestination $wordlist $wordlist_2
+        elif [ $select -eq 3 ];
         then
             echo "Enter charcter set "
             read char
@@ -167,6 +171,7 @@ then
             read min
             echo "Enter max increment number for password"
             read max
+            passwordfile
             hashcat -a 3 -m $hashtype --increment --increent-min $min --increment-max $max $hashdestination $wordlist $char 
         fi 
     elif [ $hc -eq 2 ];
