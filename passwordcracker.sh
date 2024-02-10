@@ -71,6 +71,12 @@ passwordfile(){
             elif [ $qw -eq 2 ];
             then
                 wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt/
+            elif [ $qw -eq 3 ];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/python-heralding-sep2019.txt/
+            elif [ $qw -eq 4 ];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/wordpress-attacks-july2014.txt/
             fi
         fi
     else
@@ -144,11 +150,13 @@ then
         read select
         if [ $select -eq 1 ];
         then
+            passwordfile
             hashcat -a 0 -m $hashtype $hashdestination $wordlist --outfile $output.txt 
         elif [  $select -eq 2 ];
         then  
             echo "Enter location second wordlist"
             read wordlist2
+            passwordfile
             hashcat -a 0 -m $hashtype $hashdestination $wordlist $wordlist2
         elif [$select -eq 3 ];
         then
@@ -158,6 +166,7 @@ then
             read min
             echo "Enter max increment number for password"
             read max
+            passwordfile
             hashcat -a 3 -m $hashtype --increment --increent-min $min --increment-max $max $hashdestination $wordlist $char 
         fi 
     elif [ $hc -eq 2 ];
