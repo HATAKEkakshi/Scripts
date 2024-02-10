@@ -139,8 +139,6 @@ then
         read hashtype
         echo "Enter hash file location in txt format"
         read hashdestination
-        echo "Enter wordlist location"
-        read wordlist
         echo "Enter file name you want output to be saved"
         read output
         echo "Select from the following Attack TYPE"
@@ -166,7 +164,6 @@ then
             read min
             echo "Enter max increment number for password"
             read max
-            passwordfile
             hashcat -a 3 -m $hashtype --increment --increent-min $min --increment-max $max $hashdestination $wordlist $char 
         fi 
     elif [ $hc -eq 2 ];
