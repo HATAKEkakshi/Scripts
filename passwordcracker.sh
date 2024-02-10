@@ -1,20 +1,72 @@
 #!/bin/bash
 passwordfile(){
     echo "Select from following password list"
-    echo "Want to search from master list"
+    echo "Select you want to select from Seclist or no"
     echo "1.yes"
-    echo "2.No"
+    echo "2.No for different custom list"
     read opt
     if [ $opt -eq 1 ];
     then
-        passwordfile=/home/hatakekakashi/Scripts/master.txt/
+        echo "1.Leaked Databases"
+        echo "2.BiblePass"
+        echo "3.Malaware"
+        echo "4.Honeypot-caputres"
+        echo "5.Wifi-Wpa"
+        echo "6.Common-credentials"
+        echo "7.Software"
+        echo "8.Cracked Hashes"
+        echo "9.Others password list"
+        read cracked
+        if [ $cracked -eq 1 ];
+        then
+            wordlist=/home/hatakekakashi/SecLists/Cracked-Hashes/milw0rm-dictionary.txt/
+        elif [ $cracked -eq 2 ];
+        then
+            echo "Select which set list you want"
+            echo "1.Biblepass list 01-09"
+            echo "2.Biblepass list 10-17"
+            read close
+            if [ $close -eq 1 ];
+            then
+                echo "Enter the number of list"
+                read p
+                for ((i=1;i<=p;i++))
+                do
+                    wordlist=/home/hatakekakashi/SecLists/BiblePass/BiblePass_part0$i.txt/
+                done
+            else
+                echo "Enter the number of list"
+                read p
+                for ((i=10;i<=p;i++))
+                do
+                    wordlist=/home/hatakekakashi/SecLists/BiblePass/BiblePass_part$i.txt/
+                done
+            fi
+        elif [ $cracked -eq 3 ];
+        then
+            echo "choose from the following"
+            echo "1.Conficker"
+            echo "2.mirai-botnet.txt"
+            read q
+            if [ $q -eq 1 ];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Malaware/conficker.txt/
+            elif [ $q -eq 2];
+            then
+                wordlist=/home/hatakekakashi/SecLists/Malaware/mirai-botnet.txt/
+            else
+                echo "Oops choose wrong input"
+            fi
+        elif [ $cracked -eq 4 ];
+        then
+            echo "Choose from the following "
+            
+        fi
     else
-        echo "here you go"
+        echo "Enter the destination of the file of wordlist"
+        read open
+        wordlist=$open
     fi
-
-    echo "enter keyword to search in files"
-    read search
-    grep $search
 }
 echo "Select format of password you want to crack"
 echo "1.Protocol type"
@@ -24,7 +76,7 @@ read type
 if [ $type -eq 1 ];
 then
     echo "under construnction"
-    passwordfile
+    
 elif [ $type -eq 2 ];
 then
     
