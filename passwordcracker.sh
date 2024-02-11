@@ -210,6 +210,7 @@ passwordfile(){
             then
                 wordlist=$direct/SecLists/Passwords/Software/cain-and-abel.txt
             elif [ $lt -eq 2 ];
+            then
                 wordlist=$direct/SecLists/Passwords/Software/john-the-ripper.txt
             fi
         elif [ $cracked -eq 8 ];
