@@ -510,6 +510,22 @@ passwordfile(){
             fi
         elif [ $cracked -eq 12 ];
         then
+            echo "<-------------------------SELECT FRM THE FOLLOWING LIST---------------------------->"
+            echo "1.Password List 01"
+            echo "2.Password List 02"
+            echo "3.Password List 03"
+            echo "<---------------------------------------------------------------------------------->"
+            read ops
+            if [ $ops -eq 1 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Permutations/1337speak.txt
+            elif [ $ops -eq 2 ];
+            then 
+                wordlist=$direct/SecLists/Passwords/Permutations/korelogic-password.txt
+            elif [ $ops -eq 3 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Permutations/password-permutations.txt
+            fi
         elif [ $cracked -eq 13 ];
         then
         fi
