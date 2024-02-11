@@ -200,6 +200,15 @@ passwordfile(){
             fi
         elif [ $cracked -eq 7 ];
         then
+            echo "1.Password List 01"
+            echo "2.Password List 02"
+            read lt
+            if [ $lt -eq 1 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Software/cain-and-abel.txt
+            elif [ $lt -eq 2 ];
+                wordlist=$direct/SecLists/Passwords/Software/john-the-ripper.txt
+            fi
         elif [ $cracked -eq 8 ];
         then
         elif [ $cracked -eq 9 ];
