@@ -26,6 +26,9 @@ passwordfile(){
         echo "8.Cracked Hashes"
         echo "9.Others password list"
         echo "10.Wikipedia"
+        echo "11.Default Creditinals"
+        echo "12.Permutaions"
+        echo "13.Keyboard-walks"
         echo "<----------------------------------------------------------------------------------------------->"
         read cracked
         if [ $cracked -eq 1 ];
@@ -211,6 +214,7 @@ passwordfile(){
             fi
         elif [ $cracked -eq 8 ];
         then
+            wordlist=$direct/SecLists/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
         elif [ $cracked -eq 9 ];
         then
         elif [ $cracked -eq 10 ];
