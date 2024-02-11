@@ -57,7 +57,7 @@ passwordfile(){
             if [ $q -eq 1 ];
             then
                 wordlist=/home/hatakekakashi/SecLists/Passwords/Malware/conficker.txt
-            elif [ $q -eq 2];
+            elif [ $q -eq 2] ;
             then
                 wordlist=/home/hatakekakashi/SecLists/Passwords/Malware/mirai-botnet.txt
             else
