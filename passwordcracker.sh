@@ -528,6 +528,18 @@ passwordfile(){
             fi
         elif [ $cracked -eq 13 ];
         then
+            echo "<------------------SELECT FROM THE FOLLOWING LIST------------------------------>"
+            echo "1.Password List 01"
+            echo "2.Password List 02"
+            echo "<------------------------------------------------------------------------------->"
+            read cs
+            if [ $cs -eq 1 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Keyboard-Walks/Keyboard-Combinations.txt 
+            elif [ $cs -eq 2 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Keyboard-Walks/walk-the-line.txt
+            fi
         fi
     else
         echo "Enter the destination of the file of wordlist"
