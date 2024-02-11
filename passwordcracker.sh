@@ -542,12 +542,14 @@ passwordfile(){
                 wordlist=$direct/SecLists/Passwords/Keyboard-Walks/walk-the-line.txt
             fi
         fi
+    fi
     else
         echo "Enter the destination of the file of wordlist"
         read open
         wordlist=$open
-    fi
+     fi 
 }
+
 echo "<------------------------------------------------Select format of Password you want to crack------------------------------------------------->"
 echo "1.Protocol type"
 echo "2.Wifi password"
