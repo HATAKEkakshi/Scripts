@@ -396,6 +396,32 @@ passwordfile(){
         elif [ $cracked -eq 10 ];
         then
             echo "<---------------SELECT FROM THE FOLLOWING LIST------------->"
+            echo "1.Password List 01"
+            echo "2.Password List 02"
+            echo "3.Password List 03"
+            echo "4.Password List 04"
+            echo "5.Password List 05"
+            echo "6.Password List 06"
+            echo "<------------------------------------------------------------->"
+            read lp
+            if [ $lp -eq 1 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_de_vowels_no_compounds_top-1000000.txt
+            elif [ $lp -eq 2 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_en_vowels_no_compounds_top-1000000.txt
+            elif [ $lp -eq 3 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_es_vowels_no_compounds_top-1000000.txt
+            elif [ $lp -eq 4 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_fr_vowels_no_compounds_top-1000000.txt
+            elif [ $lp -eq 5 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_pt_vowels_no_compounds_top-1000000.txt
+            elif [ $lp -eq 6 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_tr_vowels_no_compounds_top-1000000.txt
         elif [ $cracked -eq 11 ];
         then
         elif [ $cracked -eq 12 ];
