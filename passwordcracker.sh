@@ -56,10 +56,10 @@ passwordfile(){
             read q
             if [ $q -eq 1 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Passwords/Malaware/conficker.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Malware/conficker.txt
             elif [ $q -eq 2];
             then
-                wordlist=/home/hatakekakashi/SecLists/Passwords/Malaware/mirai-botnet.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Malware/mirai-botnet.txt
             else
                 echo "Oops choose wrong input"
             fi
