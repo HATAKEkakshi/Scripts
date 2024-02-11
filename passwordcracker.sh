@@ -424,6 +424,90 @@ passwordfile(){
                 wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_tr_vowels_no_compounds_top-1000000.txt
         elif [ $cracked -eq 11 ];
         then
+            echo "<-------------------------------SELECT FROM THE FOLLOWING LIST-------------------------------->"
+            echo "Password List     01"
+            echo "2.Password List   02"
+            echo "3.Password List   03"
+            echo "4.Password List   04"
+            echo "5.Password List   05"
+            echo "6.Password List   06"
+            echo "7.Password List   07"
+            echo "8.Password List   08"
+            echo "9.Password List   09"
+            echo "10.Password List  10"
+            echo "11.Password List  11"
+            echo "12.Password List  12"
+            echo "13.Password List  13"
+            echo "14.Password List  14"
+            echo "15.Password List  15"
+            echo "16.Password List  16"
+            echo "17.Password List  17"
+            echo "18.Password List  18"
+            echo "19.Password List  19"
+            echo "20.Password List  20"
+            echo "<----------------------------------------------------------------------------------------------->"
+            read uh
+            if [ $uh -eq 1 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/avaya_defaultpasslist.txt
+            elif [ $uh -eq 2 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/cryptominers.txt
+            elif [ $uh -eq 3 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/db2-betterdefaultpasslist.txt
+            elif [ $uh -eq 4 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/default-passwords.csv
+            elif [ $uh -eq 5 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/default-passwords.txt
+            elif [ $uh -eq 6 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
+            elif [ $uh -eq  7 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/mssql-betterdefaultpasslist.txt
+            elif [ $uh -eq 8 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/mysql-betterdefaultpasslist.txt
+            elif [ $uh -eq 9 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/oracle-betterdefaultpasslist.txt
+            elif [ $uh -eq 10 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/'Oracle EBS passwordlist.txt'
+            elif [ $uh -eq 11 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/'Oracle EBS userlist.txt'
+            elif [ $uh -eq 12 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/postgres-betterdefaultpasslist.txt
+            elif [ $uh -eq 13 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/scada-pass.csv
+            elif [ $uh -eq 14 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/ssh-betterdefaultpasslist.txt
+            elif [ $uh -eq 15 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/telnet-betterdefaultpasslist.txt
+            elif [ $uh -eq 16 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/telnet-phenoelit.txt
+            elif [ $uh -eq 17 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist_base64encoded.txt
+            elif [ $uh -eq 18 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt
+            elif [ $uh -eq 19 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/vnc-betterdefaultpasslist.txt
+            elif [ $uh -eq 20 ];
+            then
+                wordlist=$direct/SecLists/Passwords/Default-Credentials/windows-betterdefaultpasslist.txt
+            fi
         elif [ $cracked -eq 12 ];
         then
         elif [ $cracked -eq 13 ];
