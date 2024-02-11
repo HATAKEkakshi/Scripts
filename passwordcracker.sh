@@ -1,4 +1,7 @@
 #!/bin/bash
+yourdirect(){
+    direct=/home/hatakekakashi/
+}
 wordlist2(){
     passwordfile
     wordlist=wordlist_2
