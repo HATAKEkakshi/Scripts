@@ -25,6 +25,7 @@ passwordfile(){
         echo "7.Software"
         echo "8.Cracked Hashes"
         echo "9.Others password list"
+        echo "10.Wikipedia"
         echo "<----------------------------------------------------------------------------------------------->"
         read cracked
         if [ $cracked -eq 1 ];
