@@ -217,7 +217,189 @@ passwordfile(){
             wordlist=$direct/SecLists/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
         elif [ $cracked -eq 9 ];
         then
+        echo "<----------------------------SELECT FROM THE FOLLOWING PASSWORD LIST---------------------------->"
+        echo "Password List     01"
+        echo "2.Password List   02"
+        echo "3.Password List   03"
+        echo "4.Password List   04"
+        echo "5.Password List   05"
+        echo "6.Password List   06"
+        echo "7.Password List   07"
+        echo "8.Password List   08"
+        echo "9.Password List   09"
+        echo "10.Password List  10"
+        echo "11.Password List  11"
+        echo "12.Password List  12"
+        echo "13.Password List  13"
+        echo "14.Password List  14"
+        echo "15.Password List  15"
+        echo "16.Password List  16"
+        echo "17.Password List  17"
+        echo "18.Password List  18"
+        echo "19.Password List  19"
+        echo "20.Password List  20"
+        echo "21.Password List  21"
+        echo "22.Password List  22"
+        echo "23.Password List  23"
+        echo "24.Password List  24"
+        echo "25.Password List  25"
+        echo "26.Password List  26"
+        echo "27.Password List  27"
+        echo "28.Password List  28"
+        echo "29.Password List  29"
+        echo "30.Password List  30"
+        echo "31.Password List  31"
+        echo "32.Password List  32"
+        echo "33.Password List  33"
+        echo "34.Password List  34"
+        echo "35.Password List  35"
+        echo "36.Password List  36"
+        echo "37.Password List  37"
+        echo "38.Password List  38"
+        echo "39.Password List  39"
+        echo "40.Password List  40"
+        echo "41.Password List  41"
+        echo "42.Password List  42"
+        echo "43.Password List  43"
+        echo "<-------------------------------------------------------------------------------------------------->"
+        read ws
+        if [ $ws -eq 1 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-1000000.txt
+        elif [ $ws -eq 2 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-100000.txt
+        elif [ $ws -eq 3 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-10000.txt
+        elif [ $ws -eq 4 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-1000.txt
+        elif [ $ws -eq 5 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-100.txt
+        elif [ $ws -eq 6 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-10.txt
+        elif [ $ws -eq 7 ];
+        then
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords-dup.txt
+        elif [ $ws -eq 8 ];
+        then
+            wordlist=$direct/SecLists/Passwords/months.txt 
+        elif [ $ws -eq 9 ];
+        then                       
+            wordlist=$direct/SecLists/Passwords/xato-net-10-million-passwords.txt
+        elif [ $ws -eq 10 ];
+        then
+            wordlist=$direct/SecLists/Passwords/der-postillon.txt 
+        elif [ $ws -eq 11 ];
+        then
+            wordlist=$direct/SecLists/Passwords/dutch_common_wordlist.txt
+        elif [ $ws -eq 12 ];
+        then
+            wordlist=$direct/SecLists/Passwords/dutch_passwordlist.txt 
+        elif [ $ws -eq 13 ];
+        then
+            wordlist=$direct/SecLists/Passwords/2020-200_most_used_passwords.txt 
+        elif [ $ws -eq 14 ];
+        then 
+            wordlist=$direct/SecLists/Passwords/Most-Popular-Letter-Passes.txt
+        elif [ $ws -eq 15 ];
+        then
+            wordlist=$direct/SecLists/Passwords/2023-200_most_used_passwords.txt  
+        elif [ $ws -eq 16 ];
+        then
+            wordlist=$direct/SecLists/Passwords/mssql-passwords-nansh0u-guardicore.txt
+        elif [ $ws -eq 17 ];
+        then
+            wordlist=$direct/SecLists/Passwords/500-worst-passwords.txt     
+        elif [ $ws -eq 18 ];
+        then      
+            wordlist=$direct/SecLists/Passwords/openwall.net-all.txt
+        elif [ $ws -eq 19 ];
+        then
+            wordlist=$direct/SecLists/Passwords/500-worst-passwords.txt.bz2  
+        elif [ $ws -eq 20 ];
+        then                              
+            wordlist=$direct/SecLists/Passwords/PHP-Magic-Hashes.txt
+        elif [ $ws -eq 21 ];
+        then
+            wordlist=$direct/SecLists/Passwords/bt4-password.txt 
+        elif [ $ws -eq 22 ];
+        then                 
+            wordlist=$direct/SecLists/Passwords/probable-v2-top12000.txt
+        elif [ $ws -eq 23 ];
+        then
+            wordlist=$direct/SecLists/Passwords/cirt-default-passwords.txt       
+        elif [ $ws -eq 24 ];
+        then 
+            wordlist=$direct/SecLists/Passwords/probable-v2-top1575.txt
+        elif [ $ws -eq 25 ];
+        then
+            wordlist=$direct/SecLists/Passwords/citrix.txt         
+        elif [ $ws -eq 26 ];
+        then               
+            wordlist=$direct/SecLists/Passwords/probable-v2-top207.txt
+        elif [ $ws -eq 27 ];
+        then
+            wordlist=$direct/SecLists/Passwords/clarkson-university-82.txt   
+        elif [ $ws -eq 28 ];
+        then     
+            wordlist=$direct/SecLists/Passwords/common_corporate_passwords.lst  
+        elif [ $ws -eq 29 ];
+        then  
+            wordlist=$direct/SecLists/Passwords/richelieu-french-top20000.txt     
+        elif [ $ws -eq 30 ];
+        then           
+            wordlist=$direct/SecLists/Passwords/richelieu-french-top5000.txt      
+        elif [ $ws -eq 31 ];
+        then             
+            wordlist=$direct/SecLists/Passwords/SCRABBLE-hackerhouse.tgz
+        elif [ $ws -eq 32 ];
+        then
+            wordlist=$direct/SecLists/Passwords/darkc0de.txt       
+        elif [ $ws -eq 33 ];
+        then              
+            wordlist=$direct/SecLists/Passwords/scraped-JWT-secrets.txt
+        elif [ $ws -eq 34 ];
+        then
+            wordlist=$direct/SecLists/Passwords/darkweb2017-top10000.txt     
+        elif [ $ws -eq 35 ];
+        then     
+            wordlist=$direct/SecLists/Passwords/seasons.txt
+        elif [ $ws -eq 36 ];
+        then
+            wordlist=$direct/SecLists/Passwords/darkweb2017-top1000.txt   
+        elif [ $ws -eq 37 ];
+        then        
+            wordlist=$direct/SecLists/Passwords/darkweb2017-top100.txt   
+        elif [ $ws -eq 38 ];
+        then         
+            wordlist=$direct/SecLists/Passwords/stupid-ones-in-production.txt
+        elif [ $ws -eq 39 ];
+        then
+            wordlist=$direct/SecLists/Passwords/darkweb2017-top10.txt             
+        elif [ $ws -eq 40 ];
+        then
+            wordlist=$direct/SecLists/Passwords/twitter-banned.txt
+        elif [ $ws -eq 41 ];
+        then
+            wordlist=$direct/SecLists/Passwords/days.txt       
+        elif [ $ws -eq 42 ];
+        then                   
+            wordlist=$direct/SecLists/Passwords/unkown-azul.txt
+        elif [ $ws -eq 43 ];
+        then
+            wordlist=$direct/SecLists/Passwords/UserPassCombo-Jay.txt
+        fi
         elif [ $cracked -eq 10 ];
+        then
+        elif [ $cracked -eq 11 ];
+        then
+        elif [ $cracked -eq 12 ];
+        then
+        elif [ $cracked -eq 13 ];
         then
         fi
     else
