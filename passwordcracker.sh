@@ -407,22 +407,22 @@ passwordfile(){
             read lp
             if [ $lp -eq 1 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_de_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_de_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 2 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_en_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_en_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 3 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_es_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_es_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 4 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_fr_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_fr_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 5 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_pt_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_pt_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 6 ];
             then
-                wordlist=$direct/SecLists/Passwords/Wikipediawikipedia_tr_vowels_no_compounds_top-1000000.txt
+                wordlist=$direct/SecLists/Passwords/Wikipedia/wikipedia_tr_vowels_no_compounds_top-1000000.txt
         elif [ $cracked -eq 11 ];
         then
             echo "<-------------------------------SELECT FROM THE FOLLOWING LIST-------------------------------->"
