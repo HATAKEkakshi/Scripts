@@ -25,7 +25,7 @@ passwordfile(){
         read cracked
         if [ $cracked -eq 1 ];
         then
-            wordlist=/home/hatakekakashi/SecLists/Cracked-Hashes/milw0rm-dictionary.txt
+            wordlist=/home/hatakekakashi/SecLists/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
         elif [ $cracked -eq 2 ];
         then
             echo "Select which set list you want"
@@ -38,14 +38,14 @@ passwordfile(){
                 read p
                 for ((i=1;i<=p;i++))
                 do
-                    wordlist=/home/hatakekakashi/SecLists/BiblePass/BiblePass_part0$i.txt
+                    wordlist=/home/hatakekakashi/SecLists/Passwords/BiblePass/BiblePass_part0$i.txt
                 done
             else
                 echo "Enter the number of list"
                 read p
                 for ((i=10;i<=p;i++))
                 do
-                    wordlist=/home/hatakekakashi/SecLists/BiblePass/BiblePass_part$i.txt
+                    wordlist=/home/hatakekakashi/SecLists/Passwords/BiblePass/BiblePass_part$i.txt
                 done
             fi
         elif [ $cracked -eq 3 ];
@@ -56,10 +56,10 @@ passwordfile(){
             read q
             if [ $q -eq 1 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Malaware/conficker.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Malaware/conficker.txt
             elif [ $q -eq 2];
             then
-                wordlist=/home/hatakekakashi/SecLists/Malaware/mirai-botnet.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Malaware/mirai-botnet.txt
             else
                 echo "Oops choose wrong input"
             fi
@@ -74,16 +74,16 @@ passwordfile(){
             read qw
             if [ $qw -eq 1 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/Sucuri-Top-Wordpress-Passwords.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Honeypot-Captures/Sucuri-Top-Wordpress-Passwords.txt
             elif [ $qw -eq 2 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt
             elif [ $qw -eq 3 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/python-heralding-sep2019.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Honeypot-Captures/python-heralding-sep2019.txt
             elif [ $qw -eq 4 ];
             then
-                wordlist=/home/hatakekakashi/SecLists/Honeypot-Captures/wordpress-attacks-july2014.txt
+                wordlist=/home/hatakekakashi/SecLists/Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
             fi
         fi
     else
