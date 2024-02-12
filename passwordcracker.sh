@@ -6,6 +6,9 @@ wordlist2(){
     passwordfile
     wordlist=wordlist_2
 }
+username(){
+    
+}
 passwordfile(){
     yourdirect
     echo "Select from following password list"
