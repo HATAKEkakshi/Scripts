@@ -7,7 +7,77 @@ wordlist2(){
     wordlist=wordlist_2
 }
 username(){
-    
+    echo "<----------------SELECT FROM THE FOLLOWING LIST---------------------------------->"
+    echo "1.Honeypot-Captures"
+    echo "2.Names"
+    echo "Other Miscelloues "
+    read user
+    if [ $user -eq 1 ];
+    then
+        userlist=$direct/SecLists/Usernames/multiplesources-users-fabian-fingerle.de.txt
+    elif [ $user -eq 2 ];
+    then
+        echo "<------------------SELECT FROM THE FOLLOWING USERLIST--------------------->"
+        echo "1.Username List"
+        echo "2.Username List"
+        echo "3.Username List"
+        echo "4.Username List"
+        echo "5.Username List"
+        echo "6.Username List"
+        echo "7.Username List"
+        echo "<---------------------------------------------------------------------------->"
+        read uel
+        if [ $uel -eq 1 ];
+        then
+            userlist=$direct/SecLists/Usernames/cirt-default-usernames.txt  
+        elif [ $uel -eq 2 ];
+        then
+            userlist=$direct/SecLists/Usernames/CommonAdminBase64.txt  
+        elif [ $uel -eq 3];
+        then
+            userlist=$direct/SecLists/Usernames/mssql-usernames-nansh0u-guardicore.txt
+        elif [ $uel -eq 4 ];
+        then
+            userlist=$direct/SecLists/Usernames/sap-default-usernames.txt
+        elif [ $uel -eq 5 ];
+        then
+            userlist=$direct/SecLists/Usernames/top-usernames-shortlist.txt
+        elif [ $uel -eq 6 ];
+        then
+            userlist=$direct/SecLists/Usernames/xato-net-10-million-usernames-dup.txt
+        elif [ $uel -eq 7 ];
+        then
+            userlist=$direct/SecLists/Usernames/xato-net-10-million-usernames.txt
+        fi
+    elif [ $user -eq 3 ];
+    then
+        echo "<------------------SELECT FROM THE FOLLOWING USERLIST--------------------->"
+        echo "1.Username List"
+        echo "2.Username List"
+        echo "3.Username List"
+        echo "4.Username List"
+        echo "5.Username List"
+        echo "6.Username List"
+        echo "7.Username List"
+        echo "<---------------------------------------------------------------------------->"
+        read iop
+        if [ $iop -eq 1 ];
+        then
+            userlist=$direct/SecLists/Usernames/familynames-usa-top1000.txt 
+        elif [ $iop -eq 2 ];
+        then
+            userlist=$direct/SecLists/Usernames/forenames-india-top1000.txt
+        elif [ $iop -eq 3 ];
+        then
+            userlist=$direct/SecLists/Usernames/names.txt
+        elif [ $iop -eq 4 ];
+        then
+            userlist=$direct/SecLists/Usernames/femalenames-usa-top1000.txt
+        elif [ $iop -eq 5 ];
+        then
+            userlist=$direct/SecLists/Usernames/malenames-usa-top1000.txt
+        fi
+    fi
 }
 passwordfile(){
     yourdirect
