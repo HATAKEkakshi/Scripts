@@ -631,7 +631,16 @@ echo "<-------------------------------------------------------------------------
 read type
 if [ $type -eq 1 ];
 then
-    echo "under construnction"
+    echo "<--------------------SELECT THE SERVICE TYPE------------------------>"
+    echo "1.FTP"
+    echo "2.SSH"
+    echo "3.Telnet"
+    echo "4.Smb"
+    echo "<------------------------------------------------------------------->"
+    read oi
+    if [ $oi -eq 1 ];
+    then
+    fi
     
 elif [ $type -eq 2 ];
 then
