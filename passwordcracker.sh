@@ -640,6 +640,8 @@ then
     read oi
     if [ $oi -eq 1 ];
     then
+        enter 
+        hydra ftp://
     fi
     
 elif [ $type -eq 2 ];
