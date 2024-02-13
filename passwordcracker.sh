@@ -650,8 +650,8 @@ then
         echo "3.Telnet"
         echo "4.Smb"
         echo "<------------------------------------------------------------------->"
-        read oi
-        if [ $oi -eq 1 ];
+        read lo
+        if [ $lo -eq 1 ];
         then
             echo "Enter target ip"
             read targetip
