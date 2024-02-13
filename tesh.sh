@@ -644,31 +644,22 @@ then
     read oi
     if [ $oi -eq 1 ];
     then
-        echo "<--------------------SELECT THE SERVICE TYPE------------------------>"
-        echo "1.FTP"
-        echo "2.SSH"
-        echo "3.Telnet"
-        echo "4.Smb"
-        echo "<------------------------------------------------------------------->"
-        read oi
-        if [ $oi -eq 1 ];
+        echo "Enter target ip"
+        read targetip
+        echo "Enter target port or leave blank"
+        read targetport
+        echo "1.Custom Details"
+        echo "2.Built in function"
+        read il
+        if [ $il -eq 1 ];
         then
-            echo "Enter target ip"
-            read targetip
-            echo "Enter target port or leave blank"
-            read targetport
-            echo "1.Custom Details"
-            echo "2.Built in function"
-            read il
-            if [ $il -eq 1 ];
-            then
-                ftp
-            elif [ $il -eq 2 ];
-            then
-                ftp
-            fi
+            ftp
+        elif [ $il -eq 2 ];
+        then
+            ftp
         fi
     fi
+    
 elif [ $type -eq 2 ];
 then
     
@@ -752,5 +743,3 @@ then
         echo "<-------------------------------------------------->"
     fi
 fi
-
-   
