@@ -745,8 +745,6 @@ then
     elif [ $hc -eq 2 ];
     then
         echo "<------------------------------------------------->"
-        echo "Hash of your file "
-        read hash
         echo "Enter the name of the file you want to enter"
         read name
         echo "Enter name of the rar file name"
