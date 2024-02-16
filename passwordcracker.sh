@@ -745,8 +745,6 @@ then
     elif [ $hc -eq 2 ];
     then
         echo "<------------------------------------------------->"
-        echo "Enter the name of the file you want to enter"
-        read name
         echo "Enter name of the rar file name"
         read rarname
         echo "Enter the location of the file"
