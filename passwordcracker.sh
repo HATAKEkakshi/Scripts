@@ -744,12 +744,19 @@ then
         fi 
     elif [ $hc -eq 2 ];
     then
-        echo "Enter the location of rar file if want to crack file password"
-        read rar
-        echo "Hash of your file "
         echo "<------------------------------------------------->"
-        rar2john $rar
+        echo "Hash of your file "
+        read hash
+        echo "Enter the name of the file you want to enter"
+        read name
+        echo "Enter name of the rar file name"
+        read rarname
+        echo "Enter the location of the file"
+        read destination
         echo "<-------------------------------------------------->"
+        echo "$hash" > $name.txt
+        rar a $rarname $destination
+        rar2john $rarname.rar
     fi
 fi
 
