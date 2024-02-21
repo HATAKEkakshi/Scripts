@@ -1,4 +1,25 @@
 #!/bin/bash
+hashcreator(){
+    echo "Select the file formant"
+    echo "1.Zip"
+    echo "2.pdf"
+    echo "3.rar"
+    read ol
+    echo "Enter the file name with extension of the file"
+    read file
+    echo "Enter the file name you want hash to be saved "
+    read output
+    if [ $ol -eq 1 ];
+    then
+        zip2john $file > $output.txt
+    elif [ $ol -eq 2 ];
+    then
+        pdf2john $file > $output.txt
+    elif [ $ol -eq 3 ];
+    then
+        rar2john $file > $output.txt
+    fi
+}
 choosefile(){
     echo "<--------------------For Username wordlist-------------------------->"
     echo "1. Username"
@@ -683,6 +704,7 @@ echo "<------------------------Select format of Password you want to crack------
 echo "1.Protocol type"
 echo "2.Wifi password"
 echo "3.File password/hashes"
+echo "4.Hash Creator"
 echo "<---------------------------------------------------------------------------------------------------->"
 read type
 if [ $type -eq 1 ];
@@ -782,16 +804,11 @@ then
         fi 
     elif [ $hc -eq 2 ];
     then
-        echo "<------------------------------------------------->"
-        echo "Enter name of the rar file name"
-        read rarname
-        echo "Enter the location of the file"
-        read destination
-        echo "<-------------------------------------------------->"
-        echo "$hash" > $name.txt
-        rar a $rarname $destination
-        rar2john $rarname.rar
+      hashcreator
     fi
+elif [ $type -eq 4 ];
+then
+    hashcreator
 fi
 
 
