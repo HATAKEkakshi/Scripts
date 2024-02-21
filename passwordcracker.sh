@@ -697,13 +697,13 @@ then
     if [ $oi -eq 1 ];
     then
            ftp
-    elif [ $ol -eq 2 ];
+    elif [ $oi -eq 2 ];
     then
             ssh
-    elif [ $choice -eq 3 ];
+    elif [ $oi -eq 3 ];
     then
         telnet
-    elif [ $choice -eq 4 ];
+    elif [ $oi -eq 4 ];
     then
         mysql
     fi
