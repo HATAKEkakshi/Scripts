@@ -45,8 +45,11 @@ ftp(){
     echo "Enter the time you want it pe repeat"
     read time
     service=ftp
+    echo "Choose for password file"
     choosefile
-    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+    echo "Choose for login or usernaem list"
+    wordlist2
+    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
 }
 ssh(){
     echo "Enter Target ip"
@@ -54,8 +57,11 @@ ssh(){
     echo "Enter the time you want it pe repeat"
     read time
     service=ssh
+    echo "Choose for password file"
     choosefile
-    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+    echo "Choose for login or usernaem list"
+    wordlist2
+    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
 
 }
 telnet(){
@@ -64,8 +70,11 @@ telnet(){
     echo "Enter the time you want it pe repeat"
     read time
     service=telnet
+    echo "Choose for password file"
     choosefile
-    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+    echo "Choose for login or usernaem list"
+    wordlist2
+    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
 }
 mysql(){
     echo "Enter Target ip"
@@ -73,8 +82,11 @@ mysql(){
     echo "Enter the time you want it pe repeat"
     read time
     service=mysql
+    echo "Choose for password file"
     choosefile
-    hydra -L $wordlist -P $wordlist $service://$targetip -V -t $time
+    echo "Choose for login or usernaem list"
+    wordlist2
+    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
 }
 yourdirect(){
     direct=/home/hatakekakashi/
