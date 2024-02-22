@@ -1,4 +1,11 @@
 #!/bin/bash
+singlechoice(){
+    echo "Do you have signle name to brute force"
+    echo "Enter the login name you want to brute with"
+    read login
+    echo "Enter the password name for the brute force"
+    read pass
+}
 hashcreator(){
     echo "Select the file formant"
     echo "1.Zip"
@@ -45,11 +52,23 @@ ftp(){
     echo "Enter the time you want it pe repeat"
     read time
     service=ftp
-    echo "Choose for password file"
-    choosefile
-    echo "Choose for login or usernaem list"
-    wordlist2
-    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    echo "Do you have single word or a wordlist to brute force with"
+    echo "1. Wordlist"
+    echo "2. Single Word"
+    read uj
+    if [ $uj -eq 1 ];
+    then
+        echo "Choose for password file"
+        choosefile
+        echo "Choose for login or usernaem list"
+        wordlist2
+        hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    elif [ $uj -eq 2 ];
+    then
+        singlechoice
+        hydra -l $login -p $pass $service://$targetip -V -t $time
+    fi
+    
 }
 ssh(){
     echo "Enter Target ip"
@@ -57,12 +76,22 @@ ssh(){
     echo "Enter the time you want it pe repeat"
     read time
     service=ssh
-    echo "Choose for password file"
-    choosefile
-    echo "Choose for login or usernaem list"
-    wordlist2
-    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
-
+    echo "Do you have single word or a wordlist to brute force with"
+    echo "1. Wordlist"
+    echo "2. Single Word"
+    read kj
+    if [ $kj -eq 1 ];
+    then
+        echo "Choose for password file"
+        choosefile
+        echo "Choose for login or usernaem list"
+        wordlist2
+        hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    elif [ $kj -eq 2 ];
+    then
+         singlechoice
+         hydra -l $login -p $pass $service://$targetip -V -t $time
+    fi
 }
 telnet(){
     echo "Enter Target ip"
@@ -70,11 +99,22 @@ telnet(){
     echo "Enter the time you want it pe repeat"
     read time
     service=telnet
-    echo "Choose for password file"
-    choosefile
-    echo "Choose for login or usernaem list"
-    wordlist2
-    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    echo "Do you have single word or a wordlist to brute force with"
+    echo "1. Wordlist"
+    echo "2. Single Word"
+    read po
+    if [ $po -eq 1 ];
+    then
+         echo "Choose for password file"
+        choosefile
+        echo "Choose for login or usernaem list"
+        wordlist2
+        hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    elif [ $po -eq 2 ];
+    then
+        singlechoice
+        hydra -l $login -p $pass $service://$targetip -V -t $time
+    fi
 }
 mysql(){
     echo "Enter Target ip"
@@ -82,11 +122,22 @@ mysql(){
     echo "Enter the time you want it pe repeat"
     read time
     service=mysql
-    echo "Choose for password file"
-    choosefile
-    echo "Choose for login or usernaem list"
-    wordlist2
-    hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    echo "Do you have single word or a wordlist to brute force with"
+    echo "1. Wordlist"
+    echo "2. Single Word"
+    read io
+    if [ $io -eq 1 ];
+    then
+          echo "Choose for password file"
+          choosefile
+          echo "Choose for login or usernaem list"
+          wordlist2
+          hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
+    elif [ $io -eq 2 ];
+    then
+         singlechoice
+         hydra -l $login -p $pass $service://$targetip -V -t $time
+    fi
 }
 yourdirect(){
     direct=/home/hatakekakashi/
