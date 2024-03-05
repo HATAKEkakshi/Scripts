@@ -49,7 +49,7 @@ POP(){
     target_ip
     echo "Enter target port"
     read Port
-    nmap --script "pop3-capabilities or pop3-ntlm-info" -sV -port $Port $targetip
+    nmap --script "pop3-capabilities or pop3-ntlm-info" -sV -p $Port $targetip
 }
 serviceenum(){
     M=1
