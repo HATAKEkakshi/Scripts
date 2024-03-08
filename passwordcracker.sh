@@ -14,7 +14,7 @@ anonymous(){
     if [ $iop -eq 1 ];
     then    
           n=1
-        while [ $n -eq 1 ]:
+        while [ $n -eq 1 ];
         do
             echo "<--------------Please Select the login user is anonymous------------------->"
             echo "1.With Password"
@@ -25,12 +25,15 @@ anonymous(){
             read anonoption
             if [ $anonoption -eq 1 ];
             then
-                pass =apple
+                login=anonymous
+                pass=apple
             elif [ $anonoption -eq 2 ];
             then
+                login=anonymous
                 pass=" "
             elif [ $anonoption -eq 3 ];
             then
+                login=anonymous
                 echo "Enter the the password"
                 read pass
             elif [ $anonoption -eq 4 ];
