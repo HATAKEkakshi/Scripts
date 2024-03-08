@@ -6,6 +6,55 @@ singlechoice(){
     echo "Enter the password name for the brute force"
     read pass
 }
+anonymous(){
+    echo "Do you have anonymous login"
+    echo "1.Yes"
+    echo "2.No"
+    read iop
+    if [ $iop -eq 1 ];
+    then    
+          n=1
+        while [ $n -eq 1 ]:
+        do
+            echo "<--------------Please Select the login user is anonymous------------------->"
+            echo "1.With Password"
+            echo "2.Blank Password"
+            echo "3.custom Password"
+            echo "4. Not an anonymous user"
+            echo "<-------------------------------------------------------------------------->"
+            read anonoption
+            if [ $anonoption -eq 1 ];
+            then
+                pass =apple
+            elif [ $anonoption -eq 2 ];
+            then
+                pass=" "
+            elif [ $anonoption -eq 3 ];
+            then
+                echo "Enter the the password"
+                read pass
+            elif [ $anonoption -eq 4 ];
+            then
+                n=2
+            fi
+        echo "Do you want to continue"
+        echo "1.Yes"
+        echo "2.No"
+        read ant
+        if [ $ant -eq 1 ];
+        then
+            n=1
+        elif [ $ant -eq 2 ];
+        then
+            n=2
+        fi
+        done
+     elif [ $iop -eq 2 ];
+    then
+        singlechoice
+    fi
+  
+}
 hashcreator(){
     echo "Select the file formant"
     echo "1.Zip"
@@ -65,7 +114,7 @@ ftp(){
         hydra -L $wordlist_2 -P $wordlist $service://$targetip -V -t $time
     elif [ $uj -eq 2 ];
     then
-        singlechoice
+        anonymous
         hydra -l $login -p $pass $service://$targetip -V -t $time
     fi
     
