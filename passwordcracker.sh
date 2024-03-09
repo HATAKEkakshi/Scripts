@@ -1,4 +1,28 @@
 #!/bin/bash
+target_ip(){
+    for ((i=0;i<5;i++));
+    do  
+        if [ $i -eq 1 ];
+        then
+            echo "Enter the first bit of target ip address"
+            read a
+        elif [ $i -eq 2 ];
+        then
+             echo "Enter the second bit of target ip address"
+            read b
+        elif [ $i -eq 3 ];
+        then
+            echo "Enter the third bit of target ip address"
+            read c
+        elif [ $i -eq 4 ];
+        then
+             echo "Enter the fourth bit of target ip address"
+             read d
+        fi
+    done
+    targetip=$a.$b.$c.$d
+    
+}
 singlechoice(){
     echo "Do you have signle name to brute force"
     echo "Enter the login name you want to brute with"
@@ -99,8 +123,7 @@ choosefile(){
     fi
 }
 ftp(){
-    echo "Enter Target ip"
-    read targetip
+    target_ip
     echo "Enter the time you want it pe repeat"
     read time
     service=ftp
@@ -123,8 +146,7 @@ ftp(){
     
 }
 ssh(){
-    echo "Enter Target ip"
-    read targetip
+    target_ip
     echo "Enter the time you want it pe repeat"
     read time
     service=ssh
@@ -146,8 +168,7 @@ ssh(){
     fi
 }
 telnet(){
-    echo "Enter Target ip"
-    read targetip
+    target_ip
     echo "Enter the time you want it pe repeat"
     read time
     service=telnet
@@ -169,8 +190,7 @@ telnet(){
     fi
 }
 mysql(){
-    echo "Enter Target ip"
-    read targetip
+    target_ip
     echo "Enter the time you want it pe repeat"
     read time
     service=mysql
