@@ -44,6 +44,7 @@ type ifconfig  command on terminal to check wifi dongle name .
     <li>Copy</li>
     <li>Move</li>
   </ul>
+  <img src = "Images/Linuxcheatdashboard.png" alt="Linux cheat dashboard">
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
