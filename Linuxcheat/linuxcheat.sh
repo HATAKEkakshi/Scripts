@@ -128,6 +128,6 @@ do
         fi 
     elif [ $choice -eq 6 ];
     then
-        n==2
+        n=2
     fi
 done
