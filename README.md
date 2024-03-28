@@ -34,7 +34,16 @@ type ifconfig  command on terminal to check wifi dongle name .
 <h2>Documentation</h2>
   <h3>Basic</h3>
   <p> • It is for basic update and upgrade for debain linux sysstems</p>
-  
+  <h3> Linux Cheat</h3>
+  <p> • The Idea Behing the Linux cheat is same as the name suggested Basically cheat sheet for new linux user. </p>
+  <p><strong>Five Basic Commands</strong></p>
+  <ul>
+    <li>Create</li>
+    <li>Delete</li>
+    <li>Executable</li>
+    <li>Copy</li>
+    <li>Move</li>
+  </ul>
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
