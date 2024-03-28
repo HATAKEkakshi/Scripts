@@ -49,7 +49,7 @@ type ifconfig  command on terminal to check wifi dongle name .
     <li><strong>Copy</strong></li>
     <li><strong>Move</strong></li>
     <li><strong>Create</strong></li>
-    <li><<strong>Move</strong>/li>
+    <li><strong>Move</strong></li>
     <li><<strong>Exceutable</strong>/li>
   </ul>
  
