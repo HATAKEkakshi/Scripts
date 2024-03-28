@@ -84,42 +84,50 @@ move(){
         mv $tra $vic
     fi 
 }
-echo "<---------------------WELCOME TO LINUX CHEAT ------------------>"
-echo "Select from the following commands"
-echo "1.Copy"
-echo "2.Delete"
-echo "3.create"
-echo "4.move"
-echo "5.make exceutable file give hime permission"
-echo "<-------------------------------------------------------------->"
-read choice
-if [ $choice -eq 1 ];
-then
-    ./copy.sh
-elif [ $choice -eq 2 ];
-then
-    remove
-elif [ $choice -eq 3 ];
-then
-    echo "Enter folder name you want to create"
-    read folder
-    mkdir $folder
-elif [ $choice -eq 4 ];
-then
-    move
-elif [ $choice -eq 5 ];
-then
-    echo "Selct from the following"
-    echo "1.Single file"
-    echo "Multiple file or directory"
-    read files
-    if [ $files -eq 1 ];
+n=1
+while [ $n -eq 1 ];
+do
+    echo "<---------------------WELCOME TO LINUX CHEAT ------------------>"
+    echo "Select from the following commands"
+    echo "1.Copy"
+    echo "2.Delete"
+    echo "3.create"
+    echo "4.move"
+    echo "5.make exceutable file give hime permission"
+    echo "6.Exit"
+    echo "<-------------------------------------------------------------->"
+    read choice
+    if [ $choice -eq 1 ];
     then
-        echo "Ener file name or destination"
-        read l
-        chmod +x $l
-    elif [ $files -eq 2 ];
+        ./copy.sh
+    elif [ $choice -eq 2 ];
     then
-        chmod +x *
-    fi 
-fi
+        remove
+    elif [ $choice -eq 3 ];
+    then
+        echo "Enter folder name you want to create"
+        read folder
+        mkdir $folder
+    elif [ $choice -eq 4 ];
+    then
+        move
+    elif [ $choice -eq 5 ];
+    then
+        echo "Selct from the following"
+        echo "1.Single file"
+        echo "Multiple file or directory"
+        read files
+        if [ $files -eq 1 ];
+        then
+            echo "Ener file name or destination"
+            read l
+            chmod +x $l
+        elif [ $files -eq 2 ];
+        then
+            chmod +x *
+        fi 
+    elif [ $choice -eq 6 ];
+    then
+        n==2
+    fi
+done
