@@ -212,7 +212,7 @@ mysql(){
     fi
 }
 yourdirect(){
-    direct=/home/hatakekakashi/
+    direct=/home/hatakekakashi/Scripts/Password_Cracking
 }
 wordlist2(){
     passwordfile
