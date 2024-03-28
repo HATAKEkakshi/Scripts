@@ -51,6 +51,9 @@ type ifconfig  command on terminal to check wifi dongle name .
     <li><strong>Create</strong></li>
     <li><strong>Move</strong></li>
     <li><<strong>Exceutable</strong>/li>
+      <img src = "Images/excetuabledashboard.png" alt="exceuatble dashboard">
+      <img src = "Images/exceutablesinglefile.png" alt="Single file">
+      <img src = "Images/exceutablemultpilefile.png" alt="Multiple file">
   </ul>
  
 <h2>💻 Built with</h2>
