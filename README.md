@@ -43,7 +43,8 @@ type ifconfig  command on terminal to check wifi dongle name .
     <li>Executable</li>
     <li>Copy</li>
     <li>Move</li>
-     <img src = "Images/Linuxcheatdashboard.png" alt="Linux cheat dashboard">
+     <img src = "Images/ movemulti.png" alt="Move Multiple file">
+     <img src = "Images/ movesingle.png" alt="Move single file">
   </ul>
     <h3><strong>Copy</strong></h3>
     <h3><strong>Move</strong></h3>
