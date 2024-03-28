@@ -31,9 +31,9 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 ```
 type ifconfig  command on terminal to check wifi dongle name .
 ```
-<h2>Documentation<h2>
-  <h3>Basic<h3>
-  <p>It is for basic update and upgrade for debain linux sysstems<p>
+<h2>Documentation</h2>
+  <h3>Basic</h3>
+  <p>It is for basic update and upgrade for debain linux sysstems</p>
   
 <h2>💻 Built with</h2>
 
