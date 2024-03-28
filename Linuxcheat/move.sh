@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Select from the following function"
-echo "Multiple files to move"
-echo "single file to move"
+echo "1.Multiple files to move"
+echo "2.single file to move"
 read opt
 if [ $opt -eq 1 ];
 then
