@@ -115,7 +115,7 @@ do
     then
         echo "Selct from the following"
         echo "1.Single file"
-        echo "Multiple file or directory"
+        echo "2.Multiple file or directory"
         read files
         if [ $files -eq 1 ];
         then
