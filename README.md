@@ -60,7 +60,7 @@ type ifconfig  command on terminal to check wifi dongle name .
       <img src = "Images/excetuablesinglefile.png" alt="Single file">
       <img src = "Images/executablemultiple file.png" alt="Multiple file">
     <h3>Mac_ip_changer</h3>
- 
+       <img src = "Images/mac.png" alt="macchanger">
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
