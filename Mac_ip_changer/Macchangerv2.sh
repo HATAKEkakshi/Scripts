@@ -6,9 +6,8 @@ echo "Enter device name"
 read device
 i=1
 ifconfig $device down
-while [ $i -lt $n ]
+for ((i=0; i < $n ;i++));
 do
     macchanger -e $device
-    i=$i+1
 done
 ifconfig $device up
