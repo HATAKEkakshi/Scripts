@@ -56,7 +56,7 @@ remove(){
     then
         file
     else
-        Directory
+        directory
     fi
 }
 n=1
