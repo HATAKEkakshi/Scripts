@@ -45,6 +45,8 @@ type ifconfig  command on terminal to check wifi dongle name .
     <li>Move</li>
   </ul>
     <h3><strong>Copy</strong></h3>
+    <img src = "Images/copystart.png" alt="copystart">
+    <img src = "Images/copyoutput.png" alt="copyoutput>
     <h3><strong>Delete</strong></h3>
     <img src = "Images/Delfile.png" alt="delete file">
     <img src = "Images/deldir.png" alt="delte dir">
