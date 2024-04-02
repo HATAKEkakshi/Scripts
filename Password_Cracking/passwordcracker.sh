@@ -23,6 +23,9 @@ target_ip(){
     targetip=$a.$b.$c.$d
     
 }
+yourdirect(){
+    direct=/home/hatakekakashi/developer/Scripts/Password_Cracking
+}
 singlechoice(){
     echo "Do you have signle name to brute force"
     echo "Enter the login name you want to brute with"
@@ -210,9 +213,6 @@ mysql(){
          singlechoice
          hydra -l $login -p $pass $service://$targetip -V -t $time
     fi
-}
-yourdirect(){
-    direct=/home/hatakekakashi/Scripts/Password_Cracking
 }
 wordlist2(){
     passwordfile
