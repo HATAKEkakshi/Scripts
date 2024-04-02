@@ -5,7 +5,7 @@ target_ip(){
 }
 ftp(){
     target_ip
-    nmap -sV -p21 -sC -A $targetip
+    nmap -sV -p21 -sC -A $targetip -Pn
 }
 SSH(){
    target_ip
