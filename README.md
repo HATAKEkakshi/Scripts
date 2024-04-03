@@ -62,10 +62,17 @@ type ifconfig  command on terminal to check wifi dongle name .
     <h2>Mac_ip_changer</h2>
        <img src = "Images/mac.png" alt="macchanger">
     <h2>Wifi attacks</h2>
-      <p>1. Simple clone the repo and use it.</p>
+      <p>1. Before starting the attack make sure you have your wifi dongle connected.</p>
+      <p>2. Now check Wifi dongle name with command </p>
 
 ```
-git clone https://github.com/HATAKEkakshi/Scripts.git
+ifconfig
+```
+
+<p>3. Now Use sudo su for going root and then follow the commands.</p>
+
+```
+./monitor.sh and press 1 then enter wifi dongle name
 ```
   <h2>💻 Built with</h2>
 
