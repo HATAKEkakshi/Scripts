@@ -82,8 +82,8 @@ ifconfig
 ```
 <p><strong>MONTOR MODE</strong></p>
 <img src = "Images/exampleofmonitor.sh.png" alt="Monitor.sh">
-<p>1.First run ./flood.sh</p>
   <h3>Capturing Wpa Handshake File</h3>
+    <p>1.First run <strong>./flood.sh</strong></p>
   <h2>💻 Built with</h2>
 
 Technologies used in the project:
