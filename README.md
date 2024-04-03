@@ -20,13 +20,19 @@ Here're some of the project's best features:
 git clone https://github.com/HATAKEkakshi/Scripts.git
 ```
 
-<p>2. Before using wifi attacks use monitor.sh file to make wifi dongle in monitor mode</p>
+<p>2.Run chmod +x * then below one .</p>
+
+```
+./setup.sh
+```
+
+<p>3. Before using wifi attacks use monitor.sh file to make wifi dongle in monitor mode</p>
 
 ```
 ./monitor.sh press 1 to continue
 ```
 
-<p>3. Device name is wifi dongle name</p>
+<p>4. Device name is wifi dongle name</p>
 
 ```
 type ifconfig  command on terminal to check wifi dongle name .
@@ -74,6 +80,7 @@ ifconfig
 ```
 ./monitor.sh and press 1 then enter wifi dongle name
 ```
+  <h3>Capturing Wpa Handshake File</h3>
   <h2>💻 Built with</h2>
 
 Technologies used in the project:
