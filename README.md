@@ -80,6 +80,9 @@ ifconfig
 ```
 ./monitor.sh and press 1 then enter wifi dongle name
 ```
+<p><strong>MONTOR MODE</strong></p>
+<img src = "Images/exampleofmonitor.sh.png" alt="Monitor.sh">
+<p>1.First run ./flood.sh</p>
   <h3>Capturing Wpa Handshake File</h3>
   <h2>💻 Built with</h2>
 
