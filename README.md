@@ -23,7 +23,7 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 <p>2.Run chmod +x * then below one .</p>
 
 ```
-./setup.sh
+./setup.sh | to install all the required packagees
 ```
 
 <p>3. Before using wifi attacks use monitor.sh file to make wifi dongle in monitor mode</p>
