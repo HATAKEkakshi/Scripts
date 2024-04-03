@@ -86,6 +86,8 @@ ifconfig
     <p>1.First run <strong>./flood.sh</strong></p>
     <p>Then press 3 for capturing wpa handshake file first find the traget so press 1 </p>
     <img src = "Images/flood.sh_before.png" alt="Monitor.sh">
+    <p>Mow select the target and notedown target mac address and channel no.</p>
+     <img src = "Images/flood.sh_after.png" alt="Monitor.sh">
   <h2>💻 Built with</h2>
 
 Technologies used in the project:
