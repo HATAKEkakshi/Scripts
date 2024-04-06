@@ -88,6 +88,10 @@ ifconfig
     <img src = "Images/flood.sh_before.png" alt="Monitor.sh">
     <p>Mow select the target and notedown target mac address and channel no.</p>
      <img src = "Images/flood.sh_after.png" alt="Monitor.sh">
+    <p>Now re-run flood.sh but note down the target mac address and channel no so that we can use now</p>
+    <p>Now go to second option enter the target details there and start airplay.sh on next terminal</p>
+    <p>On airplay.sh you specific how many target you have single  or multiple in multiple you can attack uptop 4 target of your choice</p>
+    <img src = "Images/airplayandafterflood.png" alt="flood.sh">
   <h2>💻 Built with</h2>
 
 Technologies used in the project:
