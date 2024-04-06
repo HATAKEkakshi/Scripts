@@ -8,6 +8,12 @@ Multiple(){
         read target1
         echo "Enter the bssid of the target 2"
         read target2
+        echo "<----------------------------------Target Details---------------------------------->"
+        echo "Wifi chipset :$wifichipset"
+        echo "Main Bssid : $main"
+        echo "Target 1 : $target1"
+        echo "Target 2 : $target2"
+        echo "<---------------------------------------------------------------------------------->"
         i=1
         while [ $i -eq 1 ];
         do
@@ -38,6 +44,13 @@ Multiple(){
         read target2
         echo "Enter the bssid of the target 3"
         read target3
+        echo "<----------------------------------Target Details---------------------------------->"
+        echo "Wifi chipset :$wifichipset"
+        echo "Main Bssid : $main"
+        echo "Target 1 : $target1"
+        echo "Target 2 : $target2"
+        echo "Target 3 : $target3"
+        echo "<---------------------------------------------------------------------------------->"
         i=1
         while [ $i -eq 1 ];
         do
@@ -75,6 +88,14 @@ Multiple(){
         read target3
         echo "Enter the bssid of the target 4"
         read target4
+        echo "<----------------------------------Target Details---------------------------------->"
+        echo "Wifi chipset :$wifichipset"
+        echo "Main Bssid : $main"
+        echo "Target 1 : $target1"
+        echo "Target 2 : $target2"
+        echo "Target 3 : $target3"
+        echo "Target 4 : $target4"
+        echo "<---------------------------------------------------------------------------------->"
         i=1
         while [ $i -eq 1 ];
         do
@@ -127,6 +148,11 @@ Multiple(){
     then
         echo "Enter the target bssid"
         read target
+        echo "<----------------------------------Target Details---------------------------------->"
+        echo "Wifi chipset :$wifichipset"
+        echo "Main Bssid : $main"
+        echo "Target 1 : $target"
+        echo "<---------------------------------------------------------------------------------->"
         n=1
         while [ $n -eq 1 ];
         do
