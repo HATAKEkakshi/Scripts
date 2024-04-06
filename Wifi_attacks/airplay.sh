@@ -1,19 +1,37 @@
 #!/bin/bash
+change(){
+        echo "Do you want to change the details "
+            echo "1.Change"
+            echo "2.Attack"
+            read new
+            if [ $new -eq 1 ];
+            then
+                z=1
+            elif [ $new -eq 2 ];
+            then
+                z=2
+            fi
+}
 Multiple(){
     echo "Enter how many multiple target you want to attack"
     read choicetarget
     if [ $choicetarget -eq 2 ];
     then
-        echo "Enter the bssid of the target 1"
-        read target1
-        echo "Enter the bssid of the target 2"
-        read target2
-        echo "<----------------------------------Target Details---------------------------------->"
-        echo "Wifi chipset :$wifichipset"
-        echo "Main Bssid : $main"
-        echo "Target 1 : $target1"
-        echo "Target 2 : $target2"
-        echo "<---------------------------------------------------------------------------------->"
+        z=1
+        while [ $z -eq 1 ];
+        do
+            echo "Enter the bssid of the target 1"
+            read target1
+            echo "Enter the bssid of the target 2"
+            read target2
+            echo "<----------------------------------Target Details---------------------------------->"
+            echo "Wifi chipset :$wifichipset"
+            echo "Main Bssid : $main"
+            echo "Target 1 : $target1"
+            echo "Target 2 : $target2"
+            echo "<---------------------------------------------------------------------------------->"
+            change
+        done
         i=1
         while [ $i -eq 1 ];
         do
@@ -38,19 +56,24 @@ Multiple(){
         done
     elif [ $choicetarget -eq 3 ];
     then
-        echo "Enter the bssid of the target 1"
-        read target1
-        echo "Enter the bssid of the target 2"
-        read target2
-        echo "Enter the bssid of the target 3"
-        read target3
-        echo "<----------------------------------Target Details---------------------------------->"
-        echo "Wifi chipset :$wifichipset"
-        echo "Main Bssid : $main"
-        echo "Target 1 : $target1"
-        echo "Target 2 : $target2"
-        echo "Target 3 : $target3"
-        echo "<---------------------------------------------------------------------------------->"
+        z=1
+        while [ $z -eq 1 ];
+        do
+            echo "Enter the bssid of the target 1"
+            read target1
+            echo "Enter the bssid of the target 2"
+            read target2
+            echo "Enter the bssid of the target 3"
+            read target3
+            echo "<----------------------------------Target Details---------------------------------->"
+            echo "Wifi chipset :$wifichipset"
+            echo "Main Bssid : $main"
+            echo "Target 1 : $target1"
+            echo "Target 2 : $target2"
+            echo "Target 3 : $target3"
+            echo "<---------------------------------------------------------------------------------->"
+            change
+        done
         i=1
         while [ $i -eq 1 ];
         do
@@ -80,22 +103,27 @@ Multiple(){
         done
     elif [ $choicetarget -eq 4 ];
     then
-        echo "Enter the bssid of the target 1"
-        read target1
-        echo "Enter the bssid of the target 2"
-        read target2
-        echo "Enter the bssid of the target 3"
-        read target3
-        echo "Enter the bssid of the target 4"
-        read target4
-        echo "<----------------------------------Target Details---------------------------------->"
-        echo "Wifi chipset :$wifichipset"
-        echo "Main Bssid : $main"
-        echo "Target 1 : $target1"
-        echo "Target 2 : $target2"
-        echo "Target 3 : $target3"
-        echo "Target 4 : $target4"
-        echo "<---------------------------------------------------------------------------------->"
+        z=1 
+        while [ $z -eq 1 ];
+        do
+            echo "Enter the bssid of the target 1"
+            read target1
+            echo "Enter the bssid of the target 2"
+            read target2
+            echo "Enter the bssid of the target 3"
+            read target3
+            echo "Enter the bssid of the target 4"
+            read target4
+            echo "<----------------------------------Target Details---------------------------------->"
+            echo "Wifi chipset :$wifichipset"
+            echo "Main Bssid : $main"
+            echo "Target 1 : $target1"
+            echo "Target 2 : $target2"
+            echo "Target 3 : $target3"
+            echo "Target 4 : $target4"
+            echo "<---------------------------------------------------------------------------------->"
+            change
+        done
         i=1
         while [ $i -eq 1 ];
         do
