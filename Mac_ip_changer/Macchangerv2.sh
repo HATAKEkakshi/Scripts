@@ -1,5 +1,5 @@
 #!/bin/bash
-
+figlet "Macchanger" -c 
 echo "How many times you want mac address to be changed"
 read n
 echo "Enter device name"

@@ -1,4 +1,5 @@
 #!/bin/bash
+figlet "Updater" -c 
 update(){
     apt update && apt upgrade
 }

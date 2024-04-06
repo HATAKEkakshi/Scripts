@@ -1,5 +1,5 @@
 #!/bin/bash
-
+figlet "Scanner" -c
 echo "Enter Traget ip"
 read ip
 n=1

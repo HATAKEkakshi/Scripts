@@ -1,4 +1,5 @@
 #!/bin/bash 
+figlet "LinuxCheat" -c
 deldirect(){
     echo "Ensure you are in root "
     echo "Enter name or destination of directory you want to remove"

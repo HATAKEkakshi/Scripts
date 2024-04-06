@@ -1,4 +1,5 @@
 #!/bin/bash
+figlet "Service Enumerator" -c
 target_ip(){
      echo "Enter traget ip"
      read targetip
