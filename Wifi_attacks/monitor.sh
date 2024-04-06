@@ -1,5 +1,5 @@
 #!/bin/bash
-
+figlet "MOnitor Mode" -c 
 echo "For Monitor mode press 1"
 read no
 

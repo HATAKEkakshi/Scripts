@@ -1,4 +1,5 @@
 #!/bin/bash
+figlet "Cracked" -c
 target_ip(){
     for ((i=0;i<5;i++));
     do  

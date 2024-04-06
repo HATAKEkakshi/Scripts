@@ -1,4 +1,5 @@
 #!/bin/sh
+figlet "SHAKE" -c 
 macflood(){
     echo "Enter device name"
     read n

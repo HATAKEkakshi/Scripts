@@ -1,4 +1,5 @@
 #!/bin/bash
+figlet "Deauther" -c 
 change(){
         echo "Do you want to change the details "
             echo "1.Change"
