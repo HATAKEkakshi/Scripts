@@ -13,7 +13,7 @@ Multiple(){
         do
             echo "<-------------------------Select from the following target-------------------->"
             echo "1.Target 1"
-            echo "2. Target 2"
+            echo "2.Target 2"
             echo "3.Exit"
             echo "<------------------------------------------------------------------------------>"
             read attacktarget
@@ -43,7 +43,7 @@ Multiple(){
         do
             echo "<-------------------------Select from the following target-------------------->"
             echo "1.Target 1"
-            echo "2. Target 2"
+            echo "2.Target 2"
             echo "3.Target 3"
             echo "4.Exit"
             echo "<------------------------------------------------------------------------------>"
