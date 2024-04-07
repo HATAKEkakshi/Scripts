@@ -98,13 +98,13 @@ hashcreator(){
     read output
     if [ $ol -eq 1 ];
     then
-        zip2john $file > $output.txt
+        zip2john $file > $output.hash
     elif [ $ol -eq 2 ];
     then
-        pdf2john $file > $output.txt
+        pdf2john $file > $output.hash
     elif [ $ol -eq 3 ];
     then
-        rar2john $file > $output.txt
+        rar2john $file > $output.hash
     fi
 }
 choosefile(){
@@ -168,7 +168,7 @@ ssh(){
     elif [ $kj -eq 2 ];
     then
          singlechoice
-         hydra -l $login -p $pass $service://$targetip -V -t $time
+         hydra -l $login -p "$pass" $service://$targetip -V -t $time
     fi
 }
 telnet(){
@@ -190,7 +190,7 @@ telnet(){
     elif [ $po -eq 2 ];
     then
         singlechoice
-        hydra -l $login -p $pass $service://$targetip -V -t $time
+        hydra -l $login -p "$pass" $service://$targetip -V -t $time
     fi
 }
 mysql(){
