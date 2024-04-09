@@ -17,7 +17,7 @@ then
 fi
 echo "Do you have target username"
 echo "1.Yes"
-echo "2.No"
+echo "2.No"q
 read choice
 if [ $choice -eq 1 ];
 then
@@ -34,3 +34,4 @@ do
     read target_$i
     exiv2 pr target_$i
 done
+cd
