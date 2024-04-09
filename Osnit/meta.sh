@@ -17,7 +17,7 @@ then
 fi
 echo "Do you have target username"
 echo "1.Yes"
-echo "2.No"
+echo "2.No" 
 read choice
 if [ $choice -eq 1 ];
 then
