@@ -25,19 +25,26 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 ```
 ./setup.sh | to install all the required packagees
 ```
-<p>3. To Use Tools Use this command</p>
+<p>3. Now Setup the path enter the path of Scripts saved or location of Script file</p>
+
+```
+  cd Path
+  ./path.sh 
+```
+
+<p>4. To Use Tools Use this command</p>
 
 ```
   ./Chidori.sh
 ```
 
-<p>4. Before using wifi attacks use monitor.sh file to make wifi dongle in monitor mode</p>
+<p>5. Before using wifi attacks use monitor.sh file to make wifi dongle in monitor mode</p>
 
 ```
 ./monitor.sh press 1 to continue
 ```
 
-<p>5. Device name is wifi dongle name</p>
+<p>6. Device name is wifi dongle name</p>
 
 ```
 type ifconfig  command on terminal to check wifi dongle name .
