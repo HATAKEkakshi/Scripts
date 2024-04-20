@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the file name
-file="path.txt"
+file="chidoripath.txt"
 
 # Function to read from the file and store in a variable
 read_file() {
