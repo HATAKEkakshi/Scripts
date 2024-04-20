@@ -15,7 +15,7 @@ read_file() {
 
 # Function to write to the file
 write_to_file() {
-    echo "Enter path of the Scripts folder:"
+    echo "Enter path of the Chidori folder:"
     read input_text
     echo "$input_text" > "$file"
     echo "Path Succesfully saved to : $file."
