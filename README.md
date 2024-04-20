@@ -25,11 +25,14 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 ```
 ./setup.sh | to install all the required packagees
 ```
-<p>3. Now Setup the path enter the path of Scripts saved or location of Script file</p>
+<p>3. Now Setup the path enter the path of chidori folder and password cracking folder its only one time process</p>
 
 ```
-  cd Path
-  ./path.sh 
+  cd Chidori
+  ./chidoripath.sh 
+  then
+  cd Password _Cracking
+  ./passpath.sh
 ```
 
 <p>4. To Use Tools Use this command</p>
