@@ -28,9 +28,10 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 <p>3. Now Setup the path enter the path of chidori folder and password cracking folder its only one time process</p>
 
 ```
+  cd Scripts
   cd Chidori
   ./chidoripath.sh 
-  then
+  cd ..
   cd Password _Cracking
   ./passpath.sh
 ```
