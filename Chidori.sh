@@ -7,16 +7,26 @@ wifi(){
     read cho
     if [ $cho -eq 1 ];
     then
-        direct
+        Path
         $path/Wifi_attacks/flood.sh
     elif [ $cho -eq 2 ];
     then
-        direct
+        Path
         $path/Wifi_attacks/airplay.sh
     fi
 }
-direct(){
-    path=/home/hatakekakashi/developer/Scripts
+Path(){
+    file="path.txt"
+
+    # Function to read from the file and store in a variable
+    read_file() {
+        if [ -f "$file" ]; then
+            path=$(<"$file")
+        else
+            path="File $file does not exist."
+        fi
+}
+read_file
 }
 n=1
 while [ $n -eq 1 ];
@@ -36,31 +46,31 @@ do
     read choice
     if [ $choice -eq 1 ];
     then
-        direct
+        Path
         $path/Basic/update.sh
     elif [ $choice -eq 2 ];
     then
-        direct
+        Path
         $path/Basic/vpn.sh
     elif [ $choice -eq 3 ];
     then
-        direct
+        Path
         $path/Network_Scanning/scanv2.sh
     elif [ $choice -eq 4 ];
     then
-        direct
+        Path
         $path/Network_Scanning/serviceenumeration.sh
     elif [ $choice -eq 5 ];
     then
-        direct
+        Path
         $path/Password_Cracking/passwordcracker.sh
     elif [ $choice -eq 6 ];
     then
-        direct
+        Path
         $path/Linuxcheat/linuxcheat.sh
     elif [ $choice -eq 7 ];
     then
-        direct
+        Path
         $path/Osnit/meta.sh
     elif [ $choice -eq 8 ];
     then
