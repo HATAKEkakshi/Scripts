@@ -237,7 +237,7 @@ username(){
     read user
     if [ $user -eq 1 ];
     then
-        userlist=$path/SecLists/Usernames/multiplesources-users-fabian-fingerle.de.txt
+        userlist=$path/Password_List/Usernames/multiplesources-users-fabian-fingerle.de.txt
     elif [ $user -eq 2 ];
     then
         echo "<------------------SELECT FROM THE FOLLOWING USERLIST--------------------->"
@@ -252,25 +252,25 @@ username(){
         read uel
         if [ $uel -eq 1 ];
         then
-            userlist=$path/SecLists/Usernames/cirt-default-usernames.txt  
+            userlist=$path/Password_List/Usernames/cirt-default-usernames.txt  
         elif [ $uel -eq 2 ];
         then
-            userlist=$path/SecLists/Usernames/CommonAdminBase64.txt  
+            userlist=$path/Password_List/Usernames/CommonAdminBase64.txt  
         elif [ $uel -eq 3];
         then
-            userlist=$path/SecLists/Usernames/mssql-usernames-nansh0u-guardicore.txt
+            userlist=$path/Password_List/Usernames/mssql-usernames-nansh0u-guardicore.txt
         elif [ $uel -eq 4 ];
         then
-            userlist=$path/SecLists/Usernames/sap-default-usernames.txt
+            userlist=$path/Password_List/Usernames/sap-default-usernames.txt
         elif [ $uel -eq 5 ];
         then
-            userlist=$path/SecLists/Usernames/top-usernames-shortlist.txt
+            userlist=$path/Password_List/Usernames/top-usernames-shortlist.txt
         elif [ $uel -eq 6 ];
         then
-            userlist=$path/SecLists/Usernames/xato-net-10-million-usernames-dup.txt
+            userlist=$path/Password_List/Usernames/xato-net-10-million-usernames-dup.txt
         elif [ $uel -eq 7 ];
         then
-            userlist=$path/SecLists/Usernames/xato-net-10-million-usernames.txt
+            userlist=$path/Password_List/Usernames/xato-net-10-million-usernames.txt
         fi
     elif [ $user -eq 3 ];
     then
@@ -286,19 +286,19 @@ username(){
         read iop
         if [ $iop -eq 1 ];
         then
-            userlist=$path/SecLists/Usernames/familynames-usa-top1000.txt 
+            userlist=$path/Password_List/Usernames/familynames-usa-top1000.txt 
         elif [ $iop -eq 2 ];
         then
-            userlist=$path/SecLists/Usernames/forenames-india-top1000.txt
+            userlist=$path/Password_List/Usernames/forenames-india-top1000.txt
         elif [ $iop -eq 3 ];
         then
-            userlist=$path/SecLists/Usernames/names.txt
+            userlist=$path/Password_List/Usernames/names.txt
         elif [ $iop -eq 4 ];
         then
-            userlist=$path/SecLists/Usernames/femalenames-usa-top1000.txt
+            userlist=$path/Password_List/Usernames/femalenames-usa-top1000.txt
         elif [ $iop -eq 5 ];
         then
-            userlist=$path/SecLists/Usernames/malenames-usa-top1000.txt
+            userlist=$path/Password_List/Usernames/malenames-usa-top1000.txt
         fi
     fi
 }
@@ -329,7 +329,7 @@ passwordfile(){
         read cracked
         if [ $cracked -eq 1 ];
         then
-            wordlist=$path/SecLists/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
+            wordlist=$path/Password_List/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
         elif [ $cracked -eq 2 ];
         then
             echo "Select which set list you want"
@@ -342,14 +342,14 @@ passwordfile(){
                 read p
                 for ((i=1;i<=p;i++))
                 do
-                    wordlist=$path/SecLists/Passwords/BiblePass/BiblePass_part0$i.txt
+                    wordlist=$path/Password_List/Passwords/BiblePass/BiblePass_part0$i.txt
                 done
             else
                 echo "Enter the number of list"
                 read p
                 for ((i=10;i<=p;i++))
                 do
-                    wordlist=$path/SecLists/Passwords/BiblePass/BiblePass_part$i.txt
+                    wordlist=$path/Password_List/Passwords/BiblePass/BiblePass_part$i.txt
                 done
             fi
         elif [ $cracked -eq 3 ];
@@ -360,10 +360,10 @@ passwordfile(){
             read q
             if [ $q -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Malware/conficker.txt
+                wordlist=$path/Password_List/Passwords/Malware/conficker.txt
             elif [ $q -eq 2] ;
             then
-                wordlist=$path/SecLists/Passwords/Malware/mirai-botnet.txt
+                wordlist=$path/Password_List/Passwords/Malware/mirai-botnet.txt
             else
                 echo "Oops choose wrong input"
             fi
@@ -378,16 +378,16 @@ passwordfile(){
             read qw
             if [ $qw -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Honeypot-Captures/Sucuri-Top-Wordpress-Passwords.txt
+                wordlist=$path/Password_List/Passwords/Honeypot-Captures/Sucuri-Top-Wordpress-Passwords.txt
             elif [ $qw -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt
+                wordlist=$path/Password_List/Passwords/Honeypot-Captures/multiplesources-passwords-fabian-fingerle.de.txt
             elif [ $qw -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/Honeypot-Captures/python-heralding-sep2019.txt
+                wordlist=$path/Password_List/Passwords/Honeypot-Captures/python-heralding-sep2019.txt
             elif [ $qw -eq 4 ];
             then
-                wordlist=$path/SecLists/Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
+                wordlist=$path/Password_List/Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
             fi
         elif [ $cracked -eq 5 ];
         then
@@ -399,13 +399,13 @@ passwordfile(){
             read we
             if [ $we -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/WiFi-WPA/probable-v2-wpa-top447.txt
+                wordlist=$path/Password_List/Passwords/WiFi-WPA/probable-v2-wpa-top447.txt
             elif [ $we -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/WiFi-WPA/probable-v2-wpa-top62.txt
+                wordlist=$path/Password_List/Passwords/WiFi-WPA/probable-v2-wpa-top62.txt
             elif [ $we -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/WiFi-WPA/probable-v2-wpa-top4800.txt
+                wordlist=$path/Password_List/Passwords/WiFi-WPA/probable-v2-wpa-top4800.txt
             fi
         elif [ $cracked -eq 6 ];
         then
@@ -435,67 +435,67 @@ passwordfile(){
             read kl
             if [ $kl -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10k-most-common.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10k-most-common.txt 
             elif [ $kl -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-100.txt 
             elif [ $kl -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-500.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-500.txt
             elif [ $kl -eq 4 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-1000.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-1000.txt
             elif [ $kl -eq 5 ];
             then 
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-10000.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-10000.txt 
             elif [ $kl -eq 6 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100000.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-100000.txt 
             elif [ $kl -eq 7 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt
             elif [ $kl -eq 8 ];
             then 
-                wordlist=$path/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/500-worst-passwords.txt
             elif [ $kl -eq 9 ];
             then 
-                 wordlist=$path/SecLists/Passwords/Common-Credentials/1900-2020.txt
+                 wordlist=$path/Password_List/Passwords/Common-Credentials/1900-2020.txt
             elif [ $kl -eq 10 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/best15.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/best15.txt 
             elif [ $kl -eq 11 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/best10.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/best10.txt 
             elif [ $kl -eq 12 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/best1050.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/best1050.txt 
             elif [ $kl -eq 13 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/common-passwords-win.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/common-passwords-win.txt 
             elif [ $kl -eq 14 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/four-digit-pin-codes-sorted-by-frequency-withcount.csv 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/four-digit-pin-codes-sorted-by-frequency-withcount.csv 
             elif [ $kl -eq 15 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/medical-devices.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/medical-devices.txt 
             elif [ $kl -eq 16 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/SplashData-2014.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/SplashData-2014.txt
             elif [ $kl -eq 17 ];
             then 
-                wordlist=$pathSecLists/Passwords/Common-Credentials/SplashData-2015-1.txt 
+                wordlist=$pathPassword_List/Passwords/Common-Credentials/SplashData-2015-1.txt 
             elif [ $kl -eq 18 ];
             then
-                wordlist=$path/SecLists/Passwords/Common-Credentials/SplashData-2015-2.txt
+                wordlist=$path/Password_List/Passwords/Common-Credentials/SplashData-2015-2.txt
             elif [ $kl -eq 19 ];
             then 
-                wordlist=$path/SecLists/Passwords/Common-Credentials/top-20-common-SSH-passwords.txt 
+                wordlist=$path/Password_List/Passwords/Common-Credentials/top-20-common-SSH-passwords.txt 
             elif [ $kl -eq 20 ];
             then
-            wordlist=$path/SecLists/Passwords/Common-Credentials/top-passwords-shortlist.txt 
+            wordlist=$path/Password_List/Passwords/Common-Credentials/top-passwords-shortlist.txt 
             elif [ $kl -eq 21 ];
             then
-            wordlist=$path/SecLists/Passwords/Common-Credentials/worst-passwords-2017-top100-slashdata.txt 
+            wordlist=$path/Password_List/Passwords/Common-Credentials/worst-passwords-2017-top100-slashdata.txt 
             fi
         elif [ $cracked -eq 7 ];
         then
@@ -504,14 +504,14 @@ passwordfile(){
             read lt
             if [ $lt -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Software/cain-and-abel.txt
+                wordlist=$path/Password_List/Passwords/Software/cain-and-abel.txt
             elif [ $lt -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Software/john-the-ripper.txt
+                wordlist=$path/Password_List/Passwords/Software/john-the-ripper.txt
             fi
         elif [ $cracked -eq 8 ];
         then
-            wordlist=$path/SecLists/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
+            wordlist=$path/Password_List/Passwords/Cracked-Hashes/milw0rm-dictionary.txt
         elif [ $cracked -eq 9 ];
         then
             echo "<----------------------------SELECT FROM THE FOLLOWING PASSWORD LIST---------------------------->"
@@ -562,133 +562,133 @@ passwordfile(){
             read ws
             if [ $ws -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-1000000.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-1000000.txt
             elif [ $ws -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-100000.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-100000.txt
             elif [ $ws -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-10000.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-10000.txt
             elif [ $ws -eq 4 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-1000.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-1000.txt
             elif [ $ws -eq 5 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-100.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-100.txt
             elif [ $ws -eq 6 ];
             then
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-10.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-10.txt
             elif [ $ws -eq 7 ];
             then
-                 wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords-dup.txt
+                 wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords-dup.txt
             elif [ $ws -eq 8 ];
             then
-                wordlist=$path/SecLists/Passwords/months.txt 
+                wordlist=$path/Password_List/Passwords/months.txt 
             elif [ $ws -eq 9 ];
             then                       
-                wordlist=$path/SecLists/Passwords/xato-net-10-million-passwords.txt
+                wordlist=$path/Password_List/Passwords/xato-net-10-million-passwords.txt
             elif [ $ws -eq 10 ];
             then
-                wordlist=$path/SecLists/Passwords/der-postillon.txt 
+                wordlist=$path/Password_List/Passwords/der-postillon.txt 
             elif [ $ws -eq 11 ];
             then
-                wordlist=$path/SecLists/Passwords/dutch_common_wordlist.txt
+                wordlist=$path/Password_List/Passwords/dutch_common_wordlist.txt
             elif [ $ws -eq 12 ];
             then
-                wordlist=$path/SecLists/Passwords/dutch_passwordlist.txt 
+                wordlist=$path/Password_List/Passwords/dutch_passwordlist.txt 
             elif [ $ws -eq 13 ];
             then
-                wordlist=$path/SecLists/Passwords/2020-200_most_used_passwords.txt 
+                wordlist=$path/Password_List/Passwords/2020-200_most_used_passwords.txt 
             elif [ $ws -eq 14 ];
             then 
-                 wordlist=$path/SecLists/Passwords/Most-Popular-Letter-Passes.txt
+                 wordlist=$path/Password_List/Passwords/Most-Popular-Letter-Passes.txt
             elif [ $ws -eq 15 ];
             then
-                 wordlist=$path/SecLists/Passwords/2023-200_most_used_passwords.txt  
+                 wordlist=$path/Password_List/Passwords/2023-200_most_used_passwords.txt  
             elif [ $ws -eq 16 ];
             then
-                wordlist=$path/SecLists/Passwords/mssql-passwords-nansh0u-guardicore.txt
+                wordlist=$path/Password_List/Passwords/mssql-passwords-nansh0u-guardicore.txt
             elif [ $ws -eq 17 ];
             then
-                wordlist=$path/SecLists/Passwords/500-worst-passwords.txt     
+                wordlist=$path/Password_List/Passwords/500-worst-passwords.txt     
             elif [ $ws -eq 18 ];
             then      
-                wordlist=$path/SecLists/Passwords/openwall.net-all.txt
+                wordlist=$path/Password_List/Passwords/openwall.net-all.txt
             elif [ $ws -eq 19 ];
             then
-                wordlist=$path/SecLists/Passwords/500-worst-passwords.txt.bz2  
+                wordlist=$path/Password_List/Passwords/500-worst-passwords.txt.bz2  
             elif [ $ws -eq 20 ];
             then                              
-                wordlist=$path/SecLists/Passwords/PHP-Magic-Hashes.txt
+                wordlist=$path/Password_List/Passwords/PHP-Magic-Hashes.txt
             elif [ $ws -eq 21 ];
             then
-                wordlist=$path/SecLists/Passwords/bt4-password.txt 
+                wordlist=$path/Password_List/Passwords/bt4-password.txt 
             elif [ $ws -eq 22 ];
             then                 
-                wordlist=$path/SecLists/Passwords/probable-v2-top12000.txt
+                wordlist=$path/Password_List/Passwords/probable-v2-top12000.txt
             elif [ $ws -eq 23 ];
             then
-                wordlist=$path/SecLists/Passwords/cirt-default-passwords.txt       
+                wordlist=$path/Password_List/Passwords/cirt-default-passwords.txt       
             elif [ $ws -eq 24 ];
             then 
-                wordlist=$path/SecLists/Passwords/probable-v2-top1575.txt
+                wordlist=$path/Password_List/Passwords/probable-v2-top1575.txt
             elif [ $ws -eq 25 ];
             then
-                wordlist=$path/SecLists/Passwords/citrix.txt         
+                wordlist=$path/Password_List/Passwords/citrix.txt         
             elif [ $ws -eq 26 ];
             then               
-                wordlist=$path/SecLists/Passwords/probable-v2-top207.txt
+                wordlist=$path/Password_List/Passwords/probable-v2-top207.txt
             elif [ $ws -eq 27 ];
             then
-                wordlist=$path/SecLists/Passwords/clarkson-university-82.txt   
+                wordlist=$path/Password_List/Passwords/clarkson-university-82.txt   
             elif [ $ws -eq 28 ];
             then     
-                wordlist=$path/SecLists/Passwords/common_corporate_passwords.lst  
+                wordlist=$path/Password_List/Passwords/common_corporate_passwords.lst  
             elif [ $ws -eq 29 ];
             then  
-                wordlist=$path/SecLists/Passwords/richelieu-french-top20000.txt     
+                wordlist=$path/Password_List/Passwords/richelieu-french-top20000.txt     
             elif [ $ws -eq 30 ];
             then           
-                wordlist=$path/SecLists/Passwords/richelieu-french-top5000.txt      
+                wordlist=$path/Password_List/Passwords/richelieu-french-top5000.txt      
             elif [ $ws -eq 31 ];
             then             
-                wordlist=$path/SecLists/Passwords/SCRABBLE-hackerhouse.tgz
+                wordlist=$path/Password_List/Passwords/SCRABBLE-hackerhouse.tgz
             elif [ $ws -eq 32 ];
             then
-                wordlist=$path/SecLists/Passwords/darkc0de.txt       
+                wordlist=$path/Password_List/Passwords/darkc0de.txt       
             elif [ $ws -eq 33 ];
             then              
-                wordlist=$path/SecLists/Passwords/scraped-JWT-secrets.txt
+                wordlist=$path/Password_List/Passwords/scraped-JWT-secrets.txt
             elif [ $ws -eq 34 ];
             then
-                wordlist=$path/SecLists/Passwords/darkweb2017-top10000.txt     
+                wordlist=$path/Password_List/Passwords/darkweb2017-top10000.txt     
             elif [ $ws -eq 35 ];
             then     
-                wordlist=$path/SecLists/Passwords/seasons.txt
+                wordlist=$path/Password_List/Passwords/seasons.txt
             elif [ $ws -eq 36 ];
             then
-                wordlist=$path/SecLists/Passwords/darkweb2017-top1000.txt   
+                wordlist=$path/Password_List/Passwords/darkweb2017-top1000.txt   
             elif [ $ws -eq 37 ];
             then        
-                wordlist=$path/SecLists/Passwords/darkweb2017-top100.txt   
+                wordlist=$path/Password_List/Passwords/darkweb2017-top100.txt   
             elif [ $ws -eq 38 ];
             then         
-                wordlist=$path/SecLists/Passwords/stupid-ones-in-production.txt
+                wordlist=$path/Password_List/Passwords/stupid-ones-in-production.txt
             elif [ $ws -eq 39 ];
             then
-                wordlist=$path/SecLists/Passwords/darkweb2017-top10.txt             
+                wordlist=$path/Password_List/Passwords/darkweb2017-top10.txt             
             elif [ $ws -eq 40 ];
             then
-                wordlist=$path/SecLists/Passwords/twitter-banned.txt
+                wordlist=$path/Password_List/Passwords/twitter-banned.txt
             elif [ $ws -eq 41 ];
             then
-                wordlist=$path/SecLists/Passwords/days.txt       
+                wordlist=$path/Password_List/Passwords/days.txt       
             elif [ $ws -eq 42 ];
             then                   
-                wordlist=$path/SecLists/Passwords/unkown-azul.txt
+                wordlist=$path/Password_List/Passwords/unkown-azul.txt
             elif [ $ws -eq 43 ];
             then
-                wordlist=$path/SecLists/Passwords/UserPassCombo-Jay.txt
+                wordlist=$path/Password_List/Passwords/UserPassCombo-Jay.txt
             fi
         elif [ $cracked -eq 10 ];
         then
@@ -703,22 +703,22 @@ passwordfile(){
             read lp
             if [ $lp -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_de_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_de_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_en_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_en_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_es_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_es_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 4 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_fr_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_fr_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 5 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_pt_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_pt_vowels_no_compounds_top-1000000.txt
             elif [ $lp -eq 6 ];
             then
-                wordlist=$path/SecLists/Passwords/Wikipedia/wikipedia_tr_vowels_no_compounds_top-1000000.txt
+                wordlist=$path/Password_List/Passwords/Wikipedia/wikipedia_tr_vowels_no_compounds_top-1000000.txt
         elif [ $cracked -eq 11 ];
         then
             echo "<-------------------------------SELECT FROM THE FOLLOWING LIST-------------------------------->"
@@ -746,64 +746,64 @@ passwordfile(){
             read uh
             if [ $uh -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/avaya_defaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/avaya_defaultpasslist.txt
             elif [ $uh -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/cryptominers.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/cryptominers.txt
             elif [ $uh -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/db2-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/db2-betterdefaultpasslist.txt
             elif [ $uh -eq 4 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/default-passwords.csv
+                wordlist=$path/Password_List/Passwords/Default-Credentials/default-passwords.csv
             elif [ $uh -eq 5 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/default-passwords.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/default-passwords.txt
             elif [ $uh -eq 6 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
             elif [ $uh -eq  7 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/mssql-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/mssql-betterdefaultpasslist.txt
             elif [ $uh -eq 8 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/mysql-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/mysql-betterdefaultpasslist.txt
             elif [ $uh -eq 9 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/oracle-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/oracle-betterdefaultpasslist.txt
             elif [ $uh -eq 10 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/'Oracle EBS passwordlist.txt'
+                wordlist=$path/Password_List/Passwords/Default-Credentials/'Oracle EBS passwordlist.txt'
             elif [ $uh -eq 11 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/'Oracle EBS userlist.txt'
+                wordlist=$path/Password_List/Passwords/Default-Credentials/'Oracle EBS userlist.txt'
             elif [ $uh -eq 12 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/postgres-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/postgres-betterdefaultpasslist.txt
             elif [ $uh -eq 13 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/scada-pass.csv
+                wordlist=$path/Password_List/Passwords/Default-Credentials/scada-pass.csv
             elif [ $uh -eq 14 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/ssh-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/ssh-betterdefaultpasslist.txt
             elif [ $uh -eq 15 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/telnet-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/telnet-betterdefaultpasslist.txt
             elif [ $uh -eq 16 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/telnet-phenoelit.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/telnet-phenoelit.txt
             elif [ $uh -eq 17 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist_base64encoded.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/tomcat-betterdefaultpasslist_base64encoded.txt
             elif [ $uh -eq 18 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt
             elif [ $uh -eq 19 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/vnc-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/vnc-betterdefaultpasslist.txt
             elif [ $uh -eq 20 ];
             then
-                wordlist=$path/SecLists/Passwords/Default-Credentials/windows-betterdefaultpasslist.txt
+                wordlist=$path/Password_List/Passwords/Default-Credentials/windows-betterdefaultpasslist.txt
             fi
         elif [ $cracked -eq 12 ];
         then
@@ -815,13 +815,13 @@ passwordfile(){
             read ops
             if [ $ops -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Permutations/1337speak.txt
+                wordlist=$path/Password_List/Passwords/Permutations/1337speak.txt
             elif [ $ops -eq 2 ];
             then 
-                wordlist=$path/SecLists/Passwords/Permutations/korelogic-password.txt
+                wordlist=$path/Password_List/Passwords/Permutations/korelogic-password.txt
             elif [ $ops -eq 3 ];
             then
-                wordlist=$path/SecLists/Passwords/Permutations/password-permutations.txt
+                wordlist=$path/Password_List/Passwords/Permutations/password-permutations.txt
             fi
         elif [ $cracked -eq 13 ];
         then
@@ -832,10 +832,10 @@ passwordfile(){
             read cs
             if [ $cs -eq 1 ];
             then
-                wordlist=$path/SecLists/Passwords/Keyboard-Walks/Keyboard-Combinations.txt 
+                wordlist=$path/Password_List/Passwords/Keyboard-Walks/Keyboard-Combinations.txt 
             elif [ $cs -eq 2 ];
             then
-                wordlist=$path/SecLists/Passwords/Keyboard-Walks/walk-the-line.txt
+                wordlist=$path/Password_List/Passwords/Keyboard-Walks/walk-the-line.txt
             fi
         fi
     fi
