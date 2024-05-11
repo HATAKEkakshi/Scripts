@@ -1,1 +1,1 @@
-/home/hatakekakashi/developer/Scripts/Password_Cracking
+/home/hatakekakashi/Developer/Scripts/Password_Cracking

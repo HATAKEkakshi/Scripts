@@ -222,7 +222,7 @@ mysql(){
     elif [ $io -eq 2 ];
     then
          singlechoice
-         hydra -l $login -p "$pass" $service://$targetip -V -t $time
+         hydra -l $login -p $pass $service://$targetip -V -t $time
     fi
 }
 wordlist2(){
