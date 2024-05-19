@@ -25,15 +25,11 @@ git clone https://github.com/HATAKEkakshi/Scripts.git
 ```
 ./setup.sh | to install all the required packagees
 ```
-<p>3. Now Setup the path enter the path of chidori folder and password cracking folder its only one time process</p>
+<p>3. Now Setup the path enter the path of Scripts saved or location of Script file</p>
 
 ```
-  cd Scripts
   cd Chidori
-  ./chidoripath.sh 
-  cd ..
-  cd Password _Cracking
-  ./passpath.sh
+  ./path.sh 
 ```
 
 <p>4. To Use Tools Use this command</p>
@@ -55,9 +51,9 @@ type ifconfig  command on terminal to check wifi dongle name .
 ```
 <h2>Documentation</h2>
   <h3>Basic</h3>
-  <p> • It is for basic update and upgrade for debain linux systems</p>
+  <p> • It is for basic update and upgrade for debain linux sysstems</p>
   <h3> Linux Cheat</h3>
-  <p> • The Idea Behind the Linux cheat is same as the name suggested Basically cheat sheet for new linux user. </p>
+  <p> • The Idea Behing the Linux cheat is same as the name suggested Basically cheat sheet for new linux user. </p>
   <p><strong>Five Basic Commands</strong></p>
   <ul>
     <li>Create</li>
