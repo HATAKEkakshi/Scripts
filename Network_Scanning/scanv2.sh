@@ -21,7 +21,7 @@ do
         nmap -sC $ip -Pn
     elif [ $scan -eq 3 ];
     then
-        nmap -sV $ip
+        nmap -sV $ip -Pn
     elif [ $scan -eq 4 ];
     then
         nmap -p- -sC -sV -Pn $ip 
