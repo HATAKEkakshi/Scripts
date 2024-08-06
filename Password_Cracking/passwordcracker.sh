@@ -1,28 +1,21 @@
 #!/bin/bash
 figlet "Cracked" -c
 target_ip(){
-    for ((i=0;i<5;i++));
-    do  
-        if [ $i -eq 1 ];
-        then
-            echo "Enter the first bit of target ip address"
-            read a
-        elif [ $i -eq 2 ];
-        then
-             echo "Enter the second bit of target ip address"
-            read b
-        elif [ $i -eq 3 ];
-        then
-            echo "Enter the third bit of target ip address"
-            read c
-        elif [ $i -eq 4 ];
-        then
-             echo "Enter the fourth bit of target ip address"
-             read d
-        fi
-    done
-    targetip=$a.$b.$c.$d
-    
+  echo "Enter traget ip"
+  read targetip
+  echo "Do you want to change ip "
+  echo "1.Yes"
+  echo "2.No"
+  read choice 
+  if [ $choice -eq 1 ];
+  then
+        echo "Enter traget ip"
+        read targetip
+
+    elif [ $choice -eq 2 ];
+    then
+        targetip=$targetip
+  fi  
 }
 Path(){
     file="passpath.txt"
@@ -78,9 +71,9 @@ anonymous(){
             then
                 n=2
             fi
-        echo "Do you want to continue"
-        echo "1.Yes"
-        echo "2.No"
+        echo "Do you want to go back to menu or continue "
+        echo "1.Back"
+        echo "2.Continue"
         read ant
         if [ $ant -eq 1 ];
         then
