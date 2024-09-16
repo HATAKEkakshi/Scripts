@@ -10,6 +10,7 @@ do
     echo "4.Commit"
     echo "5.Push"
     echo "6.Done All the work at once"
+    echo "7.Pull"
     read choice
     if [ $choice -eq 1 ] ;
     then
@@ -38,5 +39,8 @@ do
         read message
         git commit -m $message
         git push
+    elif [ $choice -eq 7 ];
+    then
+        git pull
     fi
 done
