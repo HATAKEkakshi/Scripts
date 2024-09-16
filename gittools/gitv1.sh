@@ -11,7 +11,7 @@ do
     echo "5.Push"
     echo "6.Done All the work at once"
     read choice
-    if choice[ $choice -eq 1 ];
+    if [ $choice -eq 1 ] ;
     then
         echo "Enter cloning repositroy link"
         read link
